@@ -23,6 +23,7 @@ export interface BookMetadata {
 import { russellContent } from './russell-content';
 import { aiLogicContent } from './ai-logic-content';
 import { logicCourseContent } from './logic-course-content';
+import { godelContent } from './godel-content';
 
 // Book library with metadata
 export const bookLibrary: BookMetadata[] = [
@@ -49,6 +50,14 @@ export const bookLibrary: BookMetadata[] = [
     description: 'A structured academic course covering symbolic logic fundamentals, truth tables, proofs, and practical problem-solving with homework assignments.',
     coverColor: 'bg-orange-600',
     textColor: 'text-white'
+  },
+  {
+    id: 'godel-incompleteness',
+    title: 'On the Cardinality of Arithmetical Proof Spaces',
+    author: 'J.-M. Kuczynski',
+    description: 'A non-reflexive proof of Gödel\'s First Incompleteness Theorem based on cardinality arguments rather than self-reference, exploring 35 advanced theorems.',
+    coverColor: 'bg-indigo-600',
+    textColor: 'text-white'
   }
 ];
 
@@ -74,6 +83,13 @@ export const bookContents: Record<string, BookContent> = {
     author: logicCourseContent.author,
     description: 'A structured academic course covering symbolic logic fundamentals.',
     sections: logicCourseContent.sections
+  },
+  'godel-incompleteness': {
+    id: 'godel-incompleteness',
+    title: godelContent.title,
+    author: godelContent.author,
+    description: 'A non-reflexive proof of Gödel\'s incompleteness theorem using cardinality arguments.',
+    sections: godelContent.sections
   }
 };
 
