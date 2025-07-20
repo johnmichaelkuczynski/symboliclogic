@@ -307,8 +307,8 @@ export default function LivingBook() {
       </header>
 
       <div className="flex max-w-none w-full main-content-with-bottom-bar">
-        {/* Navigation Sidebar - Narrower width for more content space */}
-        <div className="w-16 md:w-20 flex-shrink-0">
+        {/* Navigation Sidebar - Double the width for better readability */}
+        <div className="w-20 md:w-40 flex-shrink-0">
           <NavigationSidebar />
         </div>
 
@@ -326,8 +326,8 @@ export default function LivingBook() {
           />
         </main>
 
-        {/* Chat Panel - Half the previous width for more content space */}
-        <div className="w-4 md:w-48 flex-shrink-0">
+        {/* Chat Panel - Narrower for maximum content space */}
+        <div className="w-4 md:w-32 flex-shrink-0">
           <ChatInterface 
             selectedModel={selectedModel} 
             mathMode={mathMode}

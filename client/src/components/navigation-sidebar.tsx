@@ -59,11 +59,8 @@ export default function NavigationSidebar() {
   return (
     <aside className="w-full bg-card shadow-sm border-r border-border sticky top-16 h-[calc(100vh-280px)]">
       <div className="p-1 md:p-4 h-full flex flex-col">
-        <h3 className="font-inter font-semibold text-sm text-foreground mb-3 flex-shrink-0 hidden md:block">
+        <h3 className="font-inter font-semibold text-sm text-foreground mb-3 flex-shrink-0">
           Table of Contents
-        </h3>
-        <h3 className="font-inter font-semibold text-xs text-foreground mb-1 flex-shrink-0 block md:hidden text-center">
-          TOC
         </h3>
         <ScrollArea className="flex-1 h-full">
           <div className="pr-1 md:pr-4">
@@ -72,14 +69,14 @@ export default function NavigationSidebar() {
                 <button
                   key={entry.id}
                   onClick={() => handleNavClick(entry.id)}
-                  className={`block w-full text-left px-1 md:px-3 py-0.5 md:py-2 text-xs md:text-xs text-muted-foreground hover:bg-accent hover:text-primary rounded-sm transition-colors overflow-hidden ${
-                    entry.level === 1 ? 'pl-1 md:pl-3' : 
-                    entry.level === 2 ? 'pl-2 md:pl-6' : 
-                    'pl-3 md:pl-9'
+                  className={`block w-full text-left px-2 md:px-3 py-1 md:py-2 text-xs text-muted-foreground hover:bg-accent hover:text-primary rounded-sm transition-colors overflow-hidden ${
+                    entry.level === 1 ? 'pl-2 md:pl-3' : 
+                    entry.level === 2 ? 'pl-3 md:pl-6' : 
+                    'pl-4 md:pl-9'
                   }`}
                   title={entry.title}
                 >
-                  <span className="block text-xs leading-tight whitespace-normal md:truncate">
+                  <span className="block text-xs leading-tight whitespace-normal">
                     {entry.title}
                   </span>
                 </button>
