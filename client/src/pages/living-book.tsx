@@ -19,14 +19,20 @@ import PaymentModal from "@/components/payment-modal";
 
 
 import { initializeMathRenderer } from "@/lib/math-renderer";
-import { tractatusContent, getFullDocumentContent } from "@shared/tractatus-content";
 import { useAuth } from "@/hooks/use-auth";
+import { getAllBooks, getBookContent, BookMetadata, BookContent } from "@shared/book-library";
+import BookSelector from "@/components/book-selector";
 import type { AIModel } from "@shared/schema";
 
 export default function LivingBook() {
   const { user, logout, isAuthenticated } = useAuth();
   const [selectedModel, setSelectedModel] = useState<AIModel>("openai");
   const [mathMode, setMathMode] = useState<boolean>(true);
+  
+  // Book selection state
+  const [selectedBookId, setSelectedBookId] = useState<string | null>(null);
+  const [currentBook, setCurrentBook] = useState<BookContent | null>(null);
+  const [availableBooks, setAvailableBooks] = useState<BookMetadata[]>([]);
   const [questionFromSelection, setQuestionFromSelection] = useState<string>("");
   const [selectedTextForChat, setSelectedTextForChat] = useState<string>("");
   const [rewriteModalOpen, setRewriteModalOpen] = useState(false);
@@ -54,7 +60,33 @@ export default function LivingBook() {
 
   useEffect(() => {
     initializeMathRenderer();
+    
+    // Initialize available books
+    const books = getAllBooks();
+    setAvailableBooks(books);
+    
+    // Auto-select first book if available
+    if (books.length > 0) {
+      const firstBook = getBookContent(books[0].id);
+      if (firstBook) {
+        setSelectedBookId(books[0].id);
+        setCurrentBook(firstBook);
+      }
+    }
   }, []);
+
+  const handleBookSelection = (bookId: string) => {
+    const book = getBookContent(bookId);
+    if (book) {
+      setSelectedBookId(bookId);
+      setCurrentBook(book);
+    }
+  };
+
+  const handleBackToLibrary = () => {
+    setSelectedBookId(null);
+    setCurrentBook(null);
+  };
 
   const handleQuestionFromSelection = (question: string) => {
     setQuestionFromSelection(question);
@@ -184,12 +216,36 @@ export default function LivingBook() {
 
 
   const getFullDocumentText = () => {
-    return tractatusContent.sections
+    return currentBook ? currentBook.sections
       .map(section => section.content)
-      .join('\n\n');
+      .join('\n\n') : '';
   };
 
+  // Show book selector if no book is selected
+  if (!currentBook || !selectedBookId) {
+    return (
+      <div className="min-h-screen">
+        <BookSelector 
+          books={availableBooks}
+          onSelectBook={handleBookSelection}
+          selectedBookId={selectedBookId || undefined}
+        />
+        
+        {/* Authentication Modal */}
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={() => setAuthModalOpen(false)}
+          defaultTab={authModalTab}
+        />
 
+        {/* Payment Modal */}
+        <PaymentModal
+          isOpen={paymentModalOpen}
+          onClose={() => setPaymentModalOpen(false)}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="bg-background text-foreground min-h-screen">
@@ -201,14 +257,14 @@ export default function LivingBook() {
               <BookOpen className="text-primary text-base sm:text-lg" />
               <div className="flex flex-col">
                 <h1 className="font-inter font-semibold text-sm sm:text-base text-foreground">
-                  Introduction to Symbolic Logic
+                  {currentBook.title}
                 </h1>
-                <a 
-                  href="mailto:contact@zhisystems.ai"
+                <button
+                  onClick={handleBackToLibrary}
                   className="text-xs text-blue-600 hover:text-blue-800 hover:underline hidden sm:block"
                 >
-                  Contact Us
-                </a>
+                  ← Back to Library
+                </button>
               </div>
             </div>
             <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-4 overflow-x-auto">
@@ -232,7 +288,7 @@ export default function LivingBook() {
                 variant="outline"
                 size="sm"
                 onClick={() => {
-                  const fullText = getFullDocumentContent();
+                  const fullText = getFullDocumentText();
                   handleCreateStudyGuideFromSelection(fullText);
                 }}
                 className="flex items-center space-x-1 sm:space-x-2 text-blue-600 border-blue-200 hover:bg-blue-50"
@@ -309,13 +365,14 @@ export default function LivingBook() {
       <div className="flex max-w-none w-full main-content-with-bottom-bar">
         {/* Navigation Sidebar - Double the width for better readability */}
         <div className="w-20 md:w-40 flex-shrink-0">
-          <NavigationSidebar />
+          <NavigationSidebar currentBook={currentBook} />
         </div>
 
         {/* Main Content Area - Much wider with no max-width constraint */}
         <main className="flex-1 max-w-none px-1 md:px-4">
           {/* Document Content */}
           <DocumentContent 
+            currentBook={currentBook}
             mathMode={mathMode}
             onQuestionFromSelection={handleQuestionFromSelection}
             onTextSelectedForChat={handleTextSelectedForChat}
@@ -352,7 +409,7 @@ export default function LivingBook() {
         selectedModel={selectedModel}
         mode={rewriteMode}
         selectedText={selectedTextForRewrite}
-        fullDocumentText={getFullDocumentContent()}
+        fullDocumentText={currentBook ? currentBook.sections.map(s => s.content).join('\n') : ''}
       />
 
       {/* Passage Discussion Modal */}
@@ -369,7 +426,7 @@ export default function LivingBook() {
         isOpen={quizModalOpen}
         onClose={handleQuizModalClose}
         sourceText={selectedTextForQuiz}
-        chunkIndex={quizChunkIndex}
+        chunkIndex={quizChunkIndex ?? undefined}
         selectedModel={selectedModel}
       />
 
@@ -378,7 +435,7 @@ export default function LivingBook() {
         isOpen={studyGuideModalOpen}
         onClose={handleStudyGuideModalClose}
         sourceText={selectedTextForStudyGuide}
-        chunkIndex={studyGuideChunkIndex}
+        chunkIndex={studyGuideChunkIndex ?? undefined}
         selectedModel={selectedModel}
       />
 
@@ -389,7 +446,7 @@ export default function LivingBook() {
         selectedText={selectedTextForStudentTest}
         selectedModel={selectedModel}
         mathMode={mathMode}
-        chunkIndex={studentTestChunkIndex}
+        chunkIndex={studentTestChunkIndex ?? undefined}
       />
 
 

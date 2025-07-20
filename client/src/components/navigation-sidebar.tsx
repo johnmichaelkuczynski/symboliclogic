@@ -1,12 +1,18 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { paperContent } from "@shared/paper-content";
+import { BookContent } from "@shared/book-library";
 
-// Extract actual sections from the PDF content, respecting the original structure
-const extractTableOfContents = () => {
+interface NavigationSidebarProps {
+  currentBook?: BookContent;
+}
+
+// Extract actual sections from the book content
+const extractTableOfContents = (currentBook?: BookContent) => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [];
   
+  if (!currentBook) return tableOfContents;
+  
   // Get the full content from the first section
-  const content = paperContent.sections[0]?.content || '';
+  const content = currentBook.sections[0]?.content || '';
   
   // Find all section headings that have IDs (these are the actual section headers)
   const sectionPattern = /<p class="document-paragraph font-bold text-lg mb-4" id="([^"]+)">([^<]+)<\/p>/g;
@@ -31,9 +37,8 @@ const extractTableOfContents = () => {
   return tableOfContents;
 };
 
-const tableOfContents = extractTableOfContents();
-
-export default function NavigationSidebar() {
+export default function NavigationSidebar({ currentBook }: NavigationSidebarProps) {
+  const tableOfContents = extractTableOfContents(currentBook);
   const handleNavClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

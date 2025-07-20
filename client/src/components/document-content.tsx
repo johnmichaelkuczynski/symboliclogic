@@ -6,10 +6,11 @@ import { useTextSelection } from "@/hooks/use-text-selection";
 import SelectionToolbar from "@/components/selection-toolbar";
 import ChunkingModal from "@/components/chunking-modal";
 
-import { paperContent } from "@shared/paper-content";
+import { BookContent } from "@shared/book-library";
 import { Copy, Lock } from "lucide-react";
 
 interface DocumentContentProps {
+  currentBook?: BookContent;
   mathMode?: boolean;
   onQuestionFromSelection?: (question: string) => void;
   onTextSelectedForChat?: (text: string) => void;
@@ -20,6 +21,7 @@ interface DocumentContentProps {
 }
 
 export default function DocumentContent({ 
+  currentBook,
   mathMode = true, 
   onQuestionFromSelection, 
   onTextSelectedForChat, 
@@ -121,7 +123,9 @@ export default function DocumentContent({
       selection?.addRange(range);
       
       // Get the full document text
-      const fullText = paperContent.sections.map(section => 
+      if (!currentBook) return;
+      
+      const fullText = currentBook.sections.map(section => 
         `${section.title}\n\n${section.content}`
       ).join('\n\n');
       
@@ -236,15 +240,15 @@ export default function DocumentContent({
             {/* Document Title */}
             <header className="text-center mb-12">
               <h1 className="text-base font-normal text-foreground mb-2">
-                {paperContent.title}
+                {currentBook?.title || 'No Document Selected'}
               </h1>
               <p className="text-base font-normal text-muted-foreground text-center">
-                by {paperContent.author}
+                by {currentBook?.author || 'Unknown Author'}
               </p>
             </header>
 
             {/* Full Document Content - No Paywall */}
-            {paperContent.sections.map((section, index) => (
+            {currentBook?.sections.map((section, index) => (
               <section key={section.id} id={section.id} className="mb-12">
                 <div 
                   className={`text-muted-foreground leading-relaxed prose prose-lg max-w-none ${mathMode ? 'document-math-content' : 'document-text-content'}`}
