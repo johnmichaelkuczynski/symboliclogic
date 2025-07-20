@@ -148,33 +148,27 @@ export default function DocumentContent({
         return content || '';
       }
       
-      // Add IDs to section headings for navigation
+      // Add IDs to section headings for navigation (same logic as navigation sidebar)
       let processedContent = content;
       let counter = 0;
-      const seenTitles = new Set<string>(); // Track seen titles to avoid duplicates
       
-      // Split content to find where actual content starts (after table of contents)
-      const contentParts = processedContent.split('1.0 The concept of an inference');
-      
-      if (contentParts.length > 1) {
-        // Skip the table of contents section entirely and show only the actual content
-        const actualContent = '1.0 The concept of an inference' + contentParts.slice(1).join('1.0 The concept of an inference');
-        
-        const processedActualContent = actualContent.replace(
-          /class="document-paragraph mb-6 mt-8 font-normal">([0-9]+\.[0-9]+(?:\.[0-9]+)?\s+[^<]+)/g,
-          (match, titleText) => {
-            const fullTitle = titleText.trim();
-            const sectionNumber = titleText.match(/^([0-9]+\.[0-9]+(?:\.[0-9]+)?)/)?.[1] || '';
-            const id = `section-${sectionNumber.replace(/\./g, '-')}-${counter}`;
-            counter++;
-            return `class="document-paragraph mb-6 mt-8 font-normal" id="${id}">${titleText}`;
-          }
-        );
-        
-        // Only show the header and actual content, skip the table of contents
-        const headerPart = '<div class="document-content"><p class="document-paragraph mb-4">Introduction to Symbolic Logic</p><p class="document-paragraph mb-4">J.-M. Kuczynski</p>';
-        processedContent = headerPart + processedActualContent;
-      }
+      // Find all section headings with numbering pattern like "1.0", "1.1", "2.0", etc.
+      processedContent = processedContent.replace(
+        /<p class="document-paragraph">([0-9]+\.[0-9]+(?:\.[0-9]+)?\s+[^<]+)/g,
+        (match, titleText) => {
+          const fullTitle = titleText.trim();
+          const sectionNumber = titleText.match(/^([0-9]+\.[0-9]+(?:\.[0-9]+)?)/)?.[1] || '';
+          
+          // Skip if no section number found
+          if (!sectionNumber) return match;
+          
+          // Create unique ID from section number and counter to match navigation
+          const id = `section-${sectionNumber.replace(/\./g, '-')}-${counter}`;
+          counter++;
+          
+          return `<p class="document-paragraph" id="${id}">${titleText}`;
+        }
+      );
       
       if (!mathMode) {
         // Remove LaTeX notation when math mode is off
