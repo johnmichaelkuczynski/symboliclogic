@@ -150,25 +150,35 @@ export default function DocumentContent({
       
       // Add IDs to section headings for navigation (same logic as navigation sidebar)
       let processedContent = content;
-      let counter = 0;
       
-      // Find all section headings with numbering pattern like "1.0", "1.1", "2.0", etc.
-      processedContent = processedContent.replace(
-        /<p class="document-paragraph">([0-9]+\.[0-9]+(?:\.[0-9]+)?\s+[^<]+)/g,
-        (match, titleText) => {
-          const fullTitle = titleText.trim();
-          const sectionNumber = titleText.match(/^([0-9]+\.[0-9]+(?:\.[0-9]+)?)/)?.[1] || '';
-          
-          // Skip if no section number found
-          if (!sectionNumber) return match;
-          
-          // Create unique ID from section number and counter to match navigation
-          const id = `section-${sectionNumber.replace(/\./g, '-')}-${counter}`;
-          counter++;
-          
-          return `<p class="document-paragraph" id="${id}">${titleText}`;
-        }
-      );
+      // Split content to find where actual content starts (after table of contents)
+      const contentParts = processedContent.split('1.0 The concept of an inference');
+      
+      if (contentParts.length > 1) {
+        // Process only the actual content part (skip table of contents)
+        const actualContent = '1.0 The concept of an inference' + contentParts.slice(1).join('1.0 The concept of an inference');
+        
+        let counter = 0;
+        const processedActualContent = actualContent.replace(
+          /<p class="document-paragraph">([0-9]+\.[0-9]+(?:\.[0-9]+)?\s+[^<]+)/g,
+          (match, titleText) => {
+            const fullTitle = titleText.trim();
+            const sectionNumber = titleText.match(/^([0-9]+\.[0-9]+(?:\.[0-9]+)?)/)?.[1] || '';
+            
+            // Skip if no section number found
+            if (!sectionNumber) return match;
+            
+            // Create unique ID from section number and counter to match navigation
+            const id = `section-${sectionNumber.replace(/\./g, '-')}-${counter}`;
+            counter++;
+            
+            return `<p class="document-paragraph" id="${id}">${titleText}`;
+          }
+        );
+        
+        // Reconstruct the full content with the table of contents part and the processed actual content
+        processedContent = contentParts[0] + processedActualContent;
+      }
       
       if (!mathMode) {
         // Remove LaTeX notation when math mode is off
