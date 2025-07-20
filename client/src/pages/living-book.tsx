@@ -307,13 +307,13 @@ export default function LivingBook() {
       </header>
 
       <div className="flex max-w-none w-full main-content-with-bottom-bar">
-        {/* Navigation Sidebar - MOBILE FIX: Wider for readability, normal on desktop */}
-        <div className="w-20 md:w-60 flex-shrink-0">
+        {/* Navigation Sidebar - Narrower width for more content space */}
+        <div className="w-16 md:w-20 flex-shrink-0">
           <NavigationSidebar />
         </div>
 
-        {/* Main Content Area - MOBILE FIX: Maximum space, normal on desktop */}
-        <main className="flex-1 max-w-none md:max-w-5xl px-1 md:px-4">
+        {/* Main Content Area - Much wider with no max-width constraint */}
+        <main className="flex-1 max-w-none px-1 md:px-4">
           {/* Document Content */}
           <DocumentContent 
             mathMode={mathMode}
@@ -326,8 +326,8 @@ export default function LivingBook() {
           />
         </main>
 
-        {/* Chat Panel - MOBILE FIX: Very narrow on mobile, normal on desktop */}
-        <div className="w-4 md:w-96 flex-shrink-0">
+        {/* Chat Panel - Half the previous width for more content space */}
+        <div className="w-4 md:w-48 flex-shrink-0">
           <ChatInterface 
             selectedModel={selectedModel} 
             mathMode={mathMode}
