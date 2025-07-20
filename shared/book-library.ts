@@ -20,21 +20,12 @@ export interface BookMetadata {
 }
 
 // Import existing content
-import { symbolicLogicContent } from './symbolic-logic-content';
 import { russellContent } from './russell-content';
 import { aiLogicContent } from './ai-logic-content';
 import { logicCourseContent } from './logic-course-content';
 
 // Book library with metadata
 export const bookLibrary: BookMetadata[] = [
-  {
-    id: 'symbolic-logic',
-    title: 'Introduction to Symbolic Logic',
-    author: 'J.-M. Kuczynski',
-    description: 'A comprehensive introduction to the foundations of symbolic logic, covering inference, deduction, induction, entailment, and formal logical systems.',
-    coverColor: 'bg-blue-600',
-    textColor: 'text-white'
-  },
   {
     id: 'russell-mathematical-philosophy',
     title: "Russell's Mathematical Philosophy",
@@ -63,13 +54,6 @@ export const bookLibrary: BookMetadata[] = [
 
 // Book content storage
 export const bookContents: Record<string, BookContent> = {
-  'symbolic-logic': {
-    id: 'symbolic-logic',
-    title: 'Introduction to Symbolic Logic',
-    author: 'J.-M. Kuczynski',
-    description: 'A comprehensive introduction to symbolic logic and formal reasoning.',
-    sections: symbolicLogicContent.sections
-  },
   'russell-mathematical-philosophy': {
     id: 'russell-mathematical-philosophy',
     title: russellContent.title,
