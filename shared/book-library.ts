@@ -22,6 +22,7 @@ export interface BookMetadata {
 // Import existing content
 import { symbolicLogicContent } from './symbolic-logic-content';
 import { russellContent } from './russell-content';
+import { aiLogicContent } from './ai-logic-content';
 
 // Book library with metadata
 export const bookLibrary: BookMetadata[] = [
@@ -39,6 +40,14 @@ export const bookLibrary: BookMetadata[] = [
     author: 'J.-M. Kuczynski, PhD',
     description: 'A critical exposition of Bertrand Russell\'s foundational work on mathematical philosophy, exploring set theory, number theory, and the logical foundations of mathematics.',
     coverColor: 'bg-purple-600',
+    textColor: 'text-white'
+  },
+  {
+    id: 'ai-logic-course',
+    title: 'AI Logic Course',
+    author: 'Comparative Study',
+    description: 'A comprehensive comparison of traditional logic and AI approaches to reasoning, exploring how artificial intelligence transforms classical logical concepts.',
+    coverColor: 'bg-green-600',
     textColor: 'text-white'
   }
 ];
@@ -58,6 +67,13 @@ export const bookContents: Record<string, BookContent> = {
     author: russellContent.author,
     description: 'A critical exposition of Bertrand Russell\'s foundational work on mathematical philosophy.',
     sections: russellContent.sections
+  },
+  'ai-logic-course': {
+    id: 'ai-logic-course',
+    title: aiLogicContent.title,
+    author: aiLogicContent.author,
+    description: 'A comprehensive comparison of traditional logic and AI approaches to reasoning.',
+    sections: aiLogicContent.sections
   }
 };
 
