@@ -1,41 +1,25 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { paperContent } from "@shared/paper-content";
 
-// Extract table of contents from the document content
+// Extract actual sections from the PDF content, respecting the original structure
 const extractTableOfContents = () => {
   const tableOfContents: Array<{ id: string; title: string; level: number }> = [];
   
-  // Get the full content from the first section (which contains all the text)
+  // Get the full content from the first section
   const content = paperContent.sections[0]?.content || '';
   
-  // Split content to find where actual content starts (after the table of contents)
-  // The actual content starts after the first occurrence of "1.0 The concept of an inference"
-  // followed by actual text content, not just the TOC entry
-  const contentParts = content.split('1.0 The concept of an inference');
+  // Find all section headings that have IDs (these are the actual section headers)
+  const sectionPattern = /<p class="document-paragraph font-bold text-lg mb-4" id="([^"]+)">([^<]+)<\/p>/g;
   
-  if (contentParts.length > 1) {
-    // Process only the actual content part (skip table of contents)
-    const actualContent = '1.0 The concept of an inference' + contentParts.slice(1).join('1.0 The concept of an inference');
+  let match;
+  while ((match = sectionPattern.exec(content)) !== null) {
+    const id = match[1];
+    const fullTitle = match[2].trim();
     
-    // Find all section headings with numbering pattern like "1.0", "1.1", "2.0", etc.
-    const sectionPattern = /<p class="document-paragraph">([0-9]+\.[0-9]+(?:\.[0-9]+)?\s+[^<]+)/g;
-    
-    let match;
-    let counter = 0;
-    while ((match = sectionPattern.exec(actualContent)) !== null) {
-      const fullTitle = match[1].trim();
-      const sectionNumber = fullTitle.match(/^([0-9]+\.[0-9]+(?:\.[0-9]+)?)/)?.[1] || '';
-      
-      // Skip if no section number found
-      if (!sectionNumber) continue;
-      
-      // Determine level based on section number depth
-      const level = (sectionNumber.match(/\./g) || []).length;
-      
-      // Create unique ID from section number and counter to avoid duplicates
-      const id = `section-${sectionNumber.replace(/\./g, '-')}-${counter}`;
-      counter++;
-      
+    // Determine level based on section number
+    const sectionNumber = fullTitle.match(/^(\d+)\.(\d+)(?:\.(\d+))?/);
+    if (sectionNumber) {
+      const level = sectionNumber[3] ? 3 : (sectionNumber[2] === '0' ? 1 : 2);
       tableOfContents.push({
         id,
         title: fullTitle,
