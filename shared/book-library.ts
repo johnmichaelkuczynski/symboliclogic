@@ -21,6 +21,7 @@ export interface BookMetadata {
 
 // Import existing content
 import { symbolicLogicContent } from './symbolic-logic-content';
+import { russellContent } from './russell-content';
 
 // Book library with metadata
 export const bookLibrary: BookMetadata[] = [
@@ -33,19 +34,11 @@ export const bookLibrary: BookMetadata[] = [
     textColor: 'text-white'
   },
   {
-    id: 'art-of-war',
-    title: 'The Art of War',
-    author: 'Sun Tzu',
-    description: 'The ancient Chinese military treatise on strategy, tactics, and warfare that has influenced military thinking and business strategy for centuries.',
-    coverColor: 'bg-red-600',
-    textColor: 'text-white'
-  },
-  {
-    id: 'philosophy-dictionary',
-    title: 'Dictionary of Analytic Philosophy',
-    author: 'J.-M. Kuczynski',
-    description: 'A comprehensive dictionary of terms and concepts in analytic philosophy, covering key ideas from logic, metaphysics, epistemology, and philosophy of language.',
-    coverColor: 'bg-green-600',
+    id: 'russell-mathematical-philosophy',
+    title: "Russell's Mathematical Philosophy",
+    author: 'J.-M. Kuczynski, PhD',
+    description: 'A critical exposition of Bertrand Russell\'s foundational work on mathematical philosophy, exploring set theory, number theory, and the logical foundations of mathematics.',
+    coverColor: 'bg-purple-600',
     textColor: 'text-white'
   }
 ];
@@ -54,12 +47,18 @@ export const bookLibrary: BookMetadata[] = [
 export const bookContents: Record<string, BookContent> = {
   'symbolic-logic': {
     id: 'symbolic-logic',
-    title: symbolicLogicContent.sections[0].title,
-    author: symbolicLogicContent.sections[0].author,
+    title: 'Introduction to Symbolic Logic',
+    author: 'J.-M. Kuczynski',
     description: 'A comprehensive introduction to symbolic logic and formal reasoning.',
     sections: symbolicLogicContent.sections
+  },
+  'russell-mathematical-philosophy': {
+    id: 'russell-mathematical-philosophy',
+    title: russellContent.title,
+    author: russellContent.author,
+    description: 'A critical exposition of Bertrand Russell\'s foundational work on mathematical philosophy.',
+    sections: russellContent.sections
   }
-  // Other book contents will be added when PDFs are provided
 };
 
 export function getBookContent(bookId: string): BookContent | null {
