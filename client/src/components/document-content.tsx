@@ -148,14 +148,14 @@ export default function DocumentContent({
         return content || '';
       }
       
-      // Add IDs to section headings for navigation (same logic as navigation sidebar)
+      // Add IDs to section headings for navigation and remove redundant table of contents
       let processedContent = content;
       
       // Split content to find where actual content starts (after table of contents)
       const contentParts = processedContent.split('1.0 The concept of an inference');
       
       if (contentParts.length > 1) {
-        // Process only the actual content part (skip table of contents)
+        // Process only the actual content part (skip table of contents entirely)
         const actualContent = '1.0 The concept of an inference' + contentParts.slice(1).join('1.0 The concept of an inference');
         
         let counter = 0;
@@ -176,8 +176,9 @@ export default function DocumentContent({
           }
         );
         
-        // Reconstruct the full content with the table of contents part and the processed actual content
-        processedContent = contentParts[0] + processedActualContent;
+        // Only show the header and actual content, skip the table of contents entirely
+        const headerPart = '<div class="document-content"><p class="document-paragraph mb-4">Introduction to Symbolic Logic</p><p class="document-paragraph mb-4">J.-M. Kuczynski</p>';
+        processedContent = headerPart + processedActualContent;
       }
       
       if (!mathMode) {
