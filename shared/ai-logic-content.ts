@@ -1,6 +1,6 @@
 export const aiLogicContent = {
   title: "AI Logic Course",
-  author: "Comparative Study of Traditional and AI Logic",
+  author: "Zhi Systems",
   sections: [
     {
       id: "fundamental-concepts",

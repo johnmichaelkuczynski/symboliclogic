@@ -37,7 +37,7 @@ export const bookLibrary: BookMetadata[] = [
   {
     id: 'ai-logic-course',
     title: 'AI Logic Course',
-    author: 'Comparative Study',
+    author: 'Zhi Systems',
     description: 'A comprehensive comparison of traditional logic and AI approaches to reasoning, exploring how artificial intelligence transforms classical logical concepts.',
     coverColor: 'bg-green-600',
     textColor: 'text-white'
