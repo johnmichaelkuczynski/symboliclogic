@@ -23,6 +23,7 @@ export interface BookMetadata {
 import { symbolicLogicContent } from './symbolic-logic-content';
 import { russellContent } from './russell-content';
 import { aiLogicContent } from './ai-logic-content';
+import { logicCourseContent } from './logic-course-content';
 
 // Book library with metadata
 export const bookLibrary: BookMetadata[] = [
@@ -49,6 +50,14 @@ export const bookLibrary: BookMetadata[] = [
     description: 'A comprehensive comparison of traditional logic and AI approaches to reasoning, exploring how artificial intelligence transforms classical logical concepts.',
     coverColor: 'bg-green-600',
     textColor: 'text-white'
+  },
+  {
+    id: 'logic-course',
+    title: 'Logic Course',
+    author: 'J.-M. Kuczynski PhD',
+    description: 'A structured academic course covering symbolic logic fundamentals, truth tables, proofs, and practical problem-solving with homework assignments.',
+    coverColor: 'bg-orange-600',
+    textColor: 'text-white'
   }
 ];
 
@@ -74,6 +83,13 @@ export const bookContents: Record<string, BookContent> = {
     author: aiLogicContent.author,
     description: 'A comprehensive comparison of traditional logic and AI approaches to reasoning.',
     sections: aiLogicContent.sections
+  },
+  'logic-course': {
+    id: 'logic-course',
+    title: logicCourseContent.title,
+    author: logicCourseContent.author,
+    description: 'A structured academic course covering symbolic logic fundamentals.',
+    sections: logicCourseContent.sections
   }
 };
 

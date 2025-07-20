@@ -1,0 +1,1950 @@
+<div class="document-content">
+<p class="document-paragraph text-center text-2xl font-bold mb-6">Introduction to Symbolic Logic</p>
+<p class="document-paragraph text-center text-lg mb-8">J.-M. Kuczynski PhD - Course Edition</p>
+<p class="document-paragraph">Introduction to Symbolic Logic 
+J.-M. Kuczynski PhD</p>
+<p class="document-paragraph font-bold text-xl mb-6" id="section-week-1-0">Week 1: Basic Concepts, Notation, and Logical Operators</p>
+<p class="document-paragraph font-bold text-lg mb-4">Introduction to Logic 
+Logic is the study of valid reasoning. In this course, we'll focus on symbolic logic, which 
+uses special symbols and precise rules to analyze and evaluate arguments. Unlike informal 
+logic, symbolic logic gives us tools to determine validity with mathematical precision.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Basic Concepts 
+ Statement (Proposition): A sentence that is either true or false, but not both 
+ Argument: A sequence of statements where one (the conclusion) is claimed to follow from 
+the others (the premises) 
+ Validity: An argument is valid if it's impossible for all premises to be true while the 
+conclusion is false 
+ Soundness: A valid argument with true premises</p>
+<p class="document-paragraph font-bold text-lg mb-4">Basic Logical Symbols 
+1. Negation (¬): "not" 
+ Example: If p = "It is raining" 
+ Then ¬p = "It is not raining"</p>
+<p class="document-paragraph">2. Conjunction (∧): "and" 
+ Example: If p = "It is cold" and q = "It is windy" 
+ Then p ∧ q = "It is cold and windy"</p>
+<p class="document-paragraph">3. Disjunction (∨): "or" 
+ Example: If p = "I will study" and q = "I will fail" 
+ Then p ∨ q = "I will study or I will fail"</p>
+<p class="document-paragraph">4. Conditional (→): "if...then" 
+ Example: If p = "It rains" and q = "The ground is wet" 
+ Then p → q = "If it rains, then the ground is wet"</p>
+<p class="document-paragraph">Material vs. Strict Implication 
+1. Material Implication (→) 
+ Truth-functional: deﬁned purely by truth values 
+ False only when antecedent is true and consequent is false 
+ Example: "If it rains, then the ground is wet"</p>
+<p class="document-paragraph">2. Strict Implication (⊃) 
+ Modal: involves necessary connection 
+ Example: "If x is a bachelor, then x is unmarried"</p>
+<p class="document-paragraph">Represents logical necessity rather than mere material implication</p>
+<p class="document-paragraph font-bold text-lg mb-4">Translation Practice</p>
+<p class="document-paragraph">From English to Symbolic Notation: 
+1. "It's not both sunny and warm" 
+ Let p = "It's sunny", q = "It's warm" 
+ Translation: ¬(p ∧ q)</p>
+<p class="document-paragraph">2. "Either I'll go to the party or I'll stay home and study" 
+ Let p = "I'll go to the party", q = "I'll stay home", r = "I'll study" 
+ Translation: p ∨ (q ∧ r)</p>
+<p class="document-paragraph">From Symbolic Notation to English: 
+1. p → (q ∨ r) 
+ Let p = "It rains", q = "I take an umbrella", r = "I stay inside" 
+ Translation: "If it rains, then I'll either take an umbrella or stay inside"</p>
+<p class="document-paragraph font-bold text-lg mb-4">Practice Exercises 
+Translate these statements into symbolic notation: 
+1. "If I study hard and get enough sleep, then I'll pass the exam" 
+2. "It's not true that I'll both go to the movies and save money" 
+3. "Either I'll ﬁnish my homework or I won't watch TV"</p>
+<p class="document-paragraph">[Solutions will be discussed next class]</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Symbolic logic provides precise tools for analyzing arguments 
+2. Basic operators (¬, ∧, ∨, →) can combine to express complex statements 
+3. Translation between natural language and logical notation requires careful attention to 
+meaning 
+4. Material implication differs from strict implication in important ways</p>
+<p class="document-paragraph">Next week, we'll explore truth tables and begin formal proofs using these concepts.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Symbolic Logic - Homework 1 
+ Basic Concepts and Notation 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Translation (20 points) 
+Translate the following English statements into symbolic logic notation. Let: 
+ p = "It rains" 
+ q = "The streets are wet" 
+ r = "People use umbrellas"</p>
+<p class="document-paragraph">s = "Traffic slows down"</p>
+<p class="document-paragraph">1. "If it rains, then the streets are wet and people use umbrellas." (5 points)</p>
+<p class="document-paragraph">2. "Either traffic slows down or it's not raining." (5 points)</p>
+<p class="document-paragraph">3. "It's not true that when it rains, traffic slows down." (5 points)</p>
+<p class="document-paragraph">4. "If the streets are wet and people use umbrellas, then it must be raining." (5 points)</p>
+<p class="document-paragraph">Part 2: Symbolization (20 points) 
+Create appropriate symbols and translate these statements into logical notation:</p>
+<p class="document-paragraph">5. "If John studies and gets tutoring, then he will pass the class. John studies and gets 
+tutoring. Therefore, John will pass the class." (10 points)</p>
+<p class="document-paragraph">6. "Either Mary goes to the gym or she goes for a run, but not both. If she goes for a run, she 
+will be tired." (10 points)</p>
+<p class="document-paragraph">Part 3: Analysis (10 points) 
+7. Explain the difference between material implication and strict implication using an 
+example of each. (10 points)</p>
+<p class="document-paragraph">Grading Rubric: 
+ Part 1: 5 points per correct translation 
+ Part 2: 10 points per correct symbolization and translation 
+ Part 3: 
+ 5 points for correct explanation of the difference 
+ 5 points for appropriate examples</p>
+<p class="document-paragraph font-bold text-lg mb-4">Symbolic Logic - Homework 1 
+ Basic Concepts and Notation (WITH ANSWERS) 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Translation (20 points) 
+Translate the following English statements into symbolic logic notation. Let: 
+ p = "It rains" 
+ q = "The streets are wet" 
+ r = "People use umbrellas" 
+ s = "Traffic slows down"</p>
+<p class="document-paragraph">1. "If it rains, then the streets are wet and people use umbrellas." (5 points) 
+ Answer: p → (q ∧ r)</p>
+<p class="document-paragraph">2. "Either traffic slows down or it's not raining." (5 points) 
+ Answer: s ∨ ¬p</p>
+<p class="document-paragraph">3. "It's not true that when it rains, traffic slows down." (5 points) 
+ Answer: ¬(p → s)</p>
+<p class="document-paragraph">4. "If the streets are wet and people use umbrellas, then it must be raining." (5 points) 
+ Answer: (q ∧ r) → p</p>
+<p class="document-paragraph">Part 2: Symbolization (20 points) 
+Create appropriate symbols and translate these statements into logical notation:</p>
+<p class="document-paragraph">5. "If John studies and gets tutoring, then he will pass the class. John studies and gets 
+tutoring. Therefore, John will pass the class." (10 points) 
+ Answer: 
+ Let s = "John studies" 
+ Let t = "John gets tutoring" 
+ Let p = "John will pass the class" 
+ Translation: ((s ∧ t) → p) ∧ (s ∧ t) → p</p>
+<p class="document-paragraph">6. "Either Mary goes to the gym or she goes for a run, but not both. If she goes for a run, she 
+will be tired." (10 points) 
+ Answer: 
+ Let g = "Mary goes to the gym" 
+ Let r = "Mary goes for a run" 
+ Let t = "Mary will be tired" 
+ Translation: ((g ∨ r) ∧ ¬(g ∧ r)) ∧ (r → t)</p>
+<p class="document-paragraph">Part 3: Analysis (10 points) 
+7. Explain the difference between material implication and strict implication using an 
+example of each. (10 points)</p>
+<p class="document-paragraph">Answer: 
+Material implication (→) is truth-functional and is false only when the antecedent is true 
+and the consequent is false. Example: "If it rains, then the ground is wet" (p → q). This is a 
+material implication because it's based on observed correlation.</p>
+<p class="document-paragraph">Strict implication (⊃) involves logical necessity. Example: "If x is a square, then x has four 
+equal sides." This is a strict implication because it's based on the deﬁnition of a square - it's 
+impossible for the antecedent to be true and the consequent false by logical necessity.</p>
+<p class="document-paragraph">Grading Rubric: 
+ Part 1: 5 points per correct translation 
+ Part 2: 10 points per correct symbolization and translation</p>
+<p class="document-paragraph">Part 3: 
+ 5 points for correct explanation of the difference 
+ 5 points for appropriate examples</p>
+<p class="document-paragraph font-bold text-lg mb-4">Propositional Calculus and Truth Tables 
+ Week 2: Truth Tables and Elementary Proofs</p>
+<p class="document-paragraph">The Propositional Calculus 
+Propositional calculus is a formal system for representing and analyzing logical 
+relationships between propositions. It provides rules for: 
+1. Constructing well-formed formulas 
+2. Evaluating truth values 
+3. Making valid inferences</p>
+<p class="document-paragraph font-bold text-lg mb-4">Truth Tables 
+Truth tables systematically show all possible truth value combinations for propositional 
+statements.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Basic Truth Tables</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Negation (¬) 
+| p | ¬p | 
+|---|-----| 
+| T | F | 
+| F | T |</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Conjunction (∧) 
+| p | q | p ∧ q | 
+|---|---|-------| 
+| T | T | T | 
+| T | F | F | 
+| F | T | F | 
+| F | F | F |</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Disjunction (∨) 
+| p | q | p ∨ q | 
+|---|---|-------| 
+| T | T | T | 
+| T | F | T | 
+| F | T | T | 
+| F | F | F |</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Conditional (→) 
+| p | q | p → q |</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">|---|---|-------| 
+| T | T | T | 
+| T | F | F | 
+| F | T | T | 
+| F | F | T |</p>
+<p class="document-paragraph font-bold text-lg mb-4">Elementary Proofs 
+Proofs in propositional logic use rules of inference to derive conclusions from premises.</p>
+<p class="document-paragraph">Key Rules of Inference:</p>
+<p class="document-paragraph">1. Modus Ponens (MP) 
+ From p → q and p, infer q 
+ Example: 
+ If it rains, the ground is wet (p → q) 
+ It is raining (p) 
+ Therefore, the ground is wet (q)</p>
+<p class="document-paragraph">2. Modus Tollens (MT) 
+ From p → q and ¬q, infer ¬p 
+ Example: 
+ If it rains, the ground is wet (p → q) 
+ The ground is not wet (¬q) 
+ Therefore, it is not raining (¬p)</p>
+<p class="document-paragraph">3. Disjunctive Syllogism (DS) 
+ From p ∨ q and ¬p, infer q 
+ Example: 
+ Either I'll study or I'll fail (p ∨ q) 
+ I'm not studying (¬p) 
+ Therefore, I'll fail (q)</p>
+<p class="document-paragraph">4. Double Negation (DN) 
+ From ¬¬p, infer p (and vice versa) 
+ Example: 
+ It is not the case that it is not raining (¬¬p) 
+ Therefore, it is raining (p)</p>
+<p class="document-paragraph font-bold text-lg mb-4">De Morgan's Laws 
+These important laws show the relationship between negation and 
+conjunction/disjunction:</p>
+<p class="document-paragraph">1. ¬(p ∧ q) ≡ (¬p ∨ ¬q) 
+2. ¬(p ∨ q) ≡ (¬p ∧ ¬q)</p>
+<p class="document-paragraph">Example: 
+"It's not true that both the sun is shining and it's warm" 
+≡ "Either the sun is not shining or it's not warm"</p>
+<p class="document-paragraph">Practice Problems 
+Let's verify De Morgan's ﬁrst law using a truth table:</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| p | q | p ∧ q | ¬(p ∧ q) | ¬p | ¬q | ¬p ∨ ¬q | 
+|---|---|-------|-----------|-----|-----|-----------| 
+| T | T | T | F | F | F | F | 
+| T | F | F | T | F | T | T | 
+| F | T | F | T | T | F | T | 
+| F | F | F | T | T | T | T |</p>
+<p class="document-paragraph">Notice how the columns for ¬(p ∧ q) and (¬p ∨ ¬q) are identical, proving their logical 
+equivalence.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Truth tables provide a mechanical method for determining validity 
+2. Rules of inference allow us to construct valid proofs 
+3. De Morgan's laws show how negation interacts with conjunction and disjunction 
+4. Complex statements can be analyzed by breaking them down into components</p>
+<p class="document-paragraph">Next week, we'll explore Boolean algebra and its relationship to propositional logic.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Symbolic Logic - Homework 2 
+ Truth Tables and Elementary Proofs 
+Total Points: 50</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part 1: Truth Tables (20 points) 
+1. Construct complete truth tables for the following expressions: (5 points each)</p>
+<p class="document-paragraph">a) (p → q) ∧ ¬p</p>
+<p class="document-paragraph">b) ¬(p ∨ q) ↔ (¬p ∧ ¬q)</p>
+<p class="document-paragraph">Part 2: Proofs (20 points) 
+2. Construct proofs for the following arguments using rules of inference. Show each step. 
+(10 points each)</p>
+<p class="document-paragraph">a) Prove: q from premises p → q, r → ¬p, r</p>
+<p class="document-paragraph">b) Prove: ¬p from premises p → q, p → r, ¬q ∨ ¬r</p>
+<p class="document-paragraph">Part 3: Applications (10 points) 
+3. Express these arguments in symbolic form and determine their validity using either a 
+truth table or proof: (5 points each)</p>
+<p class="document-paragraph">a) "If it's sunny, I'll go to the beach. If I go to the beach, I'll get a sunburn. It's sunny. 
+Therefore, I'll get a sunburn."</p>
+<p class="document-paragraph font-bold text-lg mb-4">b) "Either the butler or the maid is guilty. The butler has an alibi. Therefore, the maid is 
+guilty." 
+ Symbolic Logic - Homework 2 
+ Truth Tables and Elementary Proofs (WITH ANSWERS) 
+Total Points: 50</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part 1: Truth Tables (20 points) 
+1. Construct complete truth tables for the following expressions: (5 points each)</p>
+<p class="document-paragraph">a) (p → q) ∧ ¬p</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| p | q | p → q | ¬p | (p → q) ∧ ¬p | 
+|---|---|-------|-----|---------------| 
+| T | T | T | F | F | 
+| T | F | F | F | F | 
+| F | T | T | T | T | 
+| F | F | T | T | T |</p>
+<p class="document-paragraph">b) ¬(p ∨ q) ↔ (¬p ∧ ¬q)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| p | q | p ∨ q | ¬(p ∨ q) | ¬p | ¬q | ¬p ∧ ¬q | ¬(p ∨ q) ↔ (¬p ∧ ¬q) | 
+|---|---|-------|-----------|-----|-----|----------|----------------------| 
+| T | T | T | F | F | F | F | T | 
+| T | F | T | F | F | T | F | T | 
+| F | T | T | F | T | F | F | T | 
+| F | F | F | T | T | T | T | T |</p>
+<p class="document-paragraph">Part 2: Proofs (20 points) 
+2. Construct proofs for the following arguments using rules of inference. Show each step. 
+(10 points each)</p>
+<p class="document-paragraph">a) Prove: q from premises p → q, r → ¬p, r</p>
+<p class="document-paragraph">Answer: 
+1. p → q (premise) 
+2. r → ¬p (premise)</p>
+<p class="document-paragraph">3. r (premise) 
+4. ¬p (from 2,3 by MP) 
+5. p → q (from 1) 
+6. q (from 4,5 by MT)</p>
+<p class="document-paragraph">b) Prove: ¬p from premises p → q, p → r, ¬q ∨ ¬r</p>
+<p class="document-paragraph">Answer: 
+1. p → q (premise) 
+2. p → r (premise) 
+3. ¬q ∨ ¬r (premise) 
+4. Assume p (for reductio) 
+5. q (from 1,4 by MP) 
+6. r (from 2,4 by MP) 
+7. q ∧ r (from 5,6 by ∧I) 
+8. Contradiction with 3 
+9. Therefore, ¬p</p>
+<p class="document-paragraph">Part 3: Applications (10 points) 
+3. Express these arguments in symbolic form and determine their validity using either a 
+truth table or proof: (5 points each)</p>
+<p class="document-paragraph">a) "If it's sunny, I'll go to the beach. If I go to the beach, I'll get a sunburn. It's sunny. 
+Therefore, I'll get a sunburn."</p>
+<p class="document-paragraph">Answer: 
+Let p = "It's sunny" 
+Let q = "I'll go to the beach" 
+Let r = "I'll get a sunburn"</p>
+<p class="document-paragraph">Symbolic form: (p → q) ∧ (q → r) ∧ p ∴ r</p>
+<p class="document-paragraph">Proof: 
+1. p → q (premise) 
+2. q → r (premise) 
+3. p (premise) 
+4. q (from 1,3 by MP) 
+5. r (from 2,4 by MP)</p>
+<p class="document-paragraph">Valid argument</p>
+<p class="document-paragraph">b) "Either the butler or the maid is guilty. The butler has an alibi. Therefore, the maid is 
+guilty."</p>
+<p class="document-paragraph">Answer: 
+Let b = "The butler is guilty" 
+Let m = "The maid is guilty"</p>
+<p class="document-paragraph">Symbolic form: (b ∨ m) ∧ ¬b ∴ m</p>
+<p class="document-paragraph">This is a valid argument by disjunctive syllogism: 
+1. b ∨ m (premise) 
+2. ¬b (premise) 
+3. m (from 1,2 by DS)</p>
+<p class="document-paragraph font-bold text-lg mb-4">Symbolic Logic - Homework 2 
+ Truth Tables and Elementary Proofs (WITH ANSWERS) 
+Total Points: 50</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part 1: Truth Tables (20 points) 
+1. Construct complete truth tables for the following expressions: (5 points each)</p>
+<p class="document-paragraph">a) (p → q) ∧ ¬p</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| p | q | p → q | ¬p | (p → q) ∧ ¬p | 
+|---|---|-------|-----|---------------| 
+| T | T | T | F | F | 
+| T | F | F | F | F | 
+| F | T | T | T | T | 
+| F | F | T | T | T |</p>
+<p class="document-paragraph">b) ¬(p ∨ q) ↔ (¬p ∧ ¬q)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| p | q | p ∨ q | ¬(p ∨ q) | ¬p | ¬q | ¬p ∧ ¬q | ¬(p ∨ q) ↔ (¬p ∧ ¬q) | 
+|---|---|-------|-----------|-----|-----|----------|----------------------| 
+| T | T | T | F | F | F | F | T | 
+| T | F | T | F | F | T | F | T | 
+| F | T | T | F | T | F | F | T | 
+| F | F | F | T | T | T | T | T |</p>
+<p class="document-paragraph">Part 2: Proofs (20 points) 
+2. Construct proofs for the following arguments using rules of inference. Show each step. 
+(10 points each)</p>
+<p class="document-paragraph">a) Prove: q from premises p → q, r → ¬p, r</p>
+<p class="document-paragraph">Answer: 
+1. p → q (premise)</p>
+<p class="document-paragraph">2. r → ¬p (premise) 
+3. r (premise) 
+4. ¬p (from 2,3 by MP) 
+5. p → q (from 1) 
+6. q (from 4,5 by MT)</p>
+<p class="document-paragraph">b) Prove: ¬p from premises p → q, p → r, ¬q ∨ ¬r</p>
+<p class="document-paragraph">Answer: 
+1. p → q (premise) 
+2. p → r (premise) 
+3. ¬q ∨ ¬r (premise) 
+4. Assume p (for reductio) 
+5. q (from 1,4 by MP) 
+6. r (from 2,4 by MP) 
+7. q ∧ r (from 5,6 by ∧I) 
+8. Contradiction with 3 
+9. Therefore, ¬p</p>
+<p class="document-paragraph">Part 3: Applications (10 points) 
+3. Express these arguments in symbolic form and determine their validity using either a 
+truth table or proof: (5 points each)</p>
+<p class="document-paragraph">a) "If it's sunny, I'll go to the beach. If I go to the beach, I'll get a sunburn. It's sunny. 
+Therefore, I'll get a sunburn."</p>
+<p class="document-paragraph">Answer: 
+Let p = "It's sunny" 
+Let q = "I'll go to the beach" 
+Let r = "I'll get a sunburn"</p>
+<p class="document-paragraph">Symbolic form: (p → q) ∧ (q → r) ∧ p ∴ r</p>
+<p class="document-paragraph">Proof: 
+1. p → q (premise) 
+2. q → r (premise) 
+3. p (premise) 
+4. q (from 1,3 by MP) 
+5. r (from 2,4 by MP)</p>
+<p class="document-paragraph">Valid argument</p>
+<p class="document-paragraph">b) "Either the butler or the maid is guilty. The butler has an alibi. Therefore, the maid is 
+guilty."</p>
+<p class="document-paragraph">Answer: 
+Let b = "The butler is guilty" 
+Let m = "The maid is guilty"</p>
+<p class="document-paragraph">Symbolic form: (b ∨ m) ∧ ¬b ∴ m</p>
+<p class="document-paragraph">This is a valid argument by disjunctive syllogism: 
+1. b ∨ m (premise) 
+2. ¬b (premise) 
+3. m (from 1,2 by DS)</p>
+<p class="document-paragraph">Boolean Algebra 
+ Week 3: Boolean Operations and Laws</p>
+<p class="document-paragraph">Introduction to Boolean Algebra 
+Boolean algebra, developed by George Boole, is a mathematical structure dealing with 
+operations on logical values. It forms the foundation of digital circuit design and computer 
+science.</p>
+<p class="document-paragraph">Basic Operations 
+1. NOT (Complement) 
+ Symbol: ¬ or ' 
+ 0' = 1 
+ 1' = 0</p>
+<p class="document-paragraph">2. AND (Conjunction) 
+ Symbol: ∧ or ⋅ 
+ 1 ∧ 1 = 1 
+ 1 ∧ 0 = 0 
+ 0 ∧ 1 = 0 
+ 0 ∧ 0 = 0</p>
+<p class="document-paragraph">3. OR (Disjunction) 
+ Symbol: ∨ or + 
+ 1 ∨ 1 = 1 
+ 1 ∨ 0 = 1 
+ 0 ∨ 1 = 1 
+ 0 ∨ 0 = 0</p>
+<p class="document-paragraph">Fundamental Laws of Boolean Algebra</p>
+<p class="document-paragraph">1. Identity Laws 
+ x ∨ 0 = x</p>
+<p class="document-paragraph">x ∧ 1 = x</p>
+<p class="document-paragraph">2. Null Laws 
+ x ∨ 1 = 1 
+ x ∧ 0 = 0</p>
+<p class="document-paragraph">3. Idempotent Laws 
+ x ∨ x = x 
+ x ∧ x = x</p>
+<p class="document-paragraph">4. Complement Laws 
+ x ∨ ¬x = 1 
+ x ∧ ¬x = 0</p>
+<p class="document-paragraph">5. Commutative Laws 
+ x ∨ y = y ∨ x 
+ x ∧ y = y ∧ x</p>
+<p class="document-paragraph">6. Associative Laws 
+ (x ∨ y) ∨ z = x ∨ (y ∨ z) 
+ (x ∧ y) ∧ z = x ∧ (y ∧ z)</p>
+<p class="document-paragraph">7. Distributive Laws 
+ x ∨ (y ∧ z) = (x ∨ y) ∧ (x ∨ z) 
+ x ∧ (y ∨ z) = (x ∧ y) ∨ (x ∧ z)</p>
+<p class="document-paragraph font-bold text-lg mb-4">8. De Morgan's Laws 
+ ¬(x ∨ y) = ¬x ∧ ¬y 
+ ¬(x ∧ y) = ¬x ∨ ¬y</p>
+<p class="document-paragraph font-bold text-lg mb-4">Boolean Functions and Truth Tables 
+Any boolean function can be represented as a truth table:</p>
+<p class="document-paragraph">Example: f(x,y) = x ∧ (¬y)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| x | y | ¬y | x ∧ (¬y) | 
+|---|---|-----|-----------| 
+| 0 | 0 | 1 | 0 | 
+| 0 | 1 | 0 | 0 | 
+| 1 | 0 | 1 | 1 | 
+| 1 | 1 | 0 | 0 |</p>
+<p class="document-paragraph">Boolean Expressions and Simpliﬁcation 
+Boolean expressions can be simpliﬁed using the laws above.</p>
+<p class="document-paragraph">Example: 
+Simplify: (x ∧ y) ∨ (x ∧ ¬y) ∨ (¬x ∧ y)</p>
+<p class="document-paragraph">Step 1: Factor out common terms 
+ (x ∧ y) ∨ (x ∧ ¬y) = x ∧ (y ∨ ¬y) = x (by complement law) 
+ So our expression is: x ∨ (¬x ∧ y)</p>
+<p class="document-paragraph">Step 2: Use distributive law 
+ x ∨ (¬x ∧ y) = (x ∨ ¬x) ∧ (x ∨ y) = 1 ∧ (x ∨ y) = (x ∨ y)</p>
+<p class="document-paragraph">Applications in Digital Logic 
+Boolean algebra is fundamental to digital circuit design:</p>
+<p class="document-paragraph">1. AND Gate 
+``` 
+ A 
+ ---| 
+Output = A∧B 
+ ---| 
+ B 
+```</p>
+<p class="document-paragraph">2. OR Gate 
+``` 
+ A 
+ ---| 
+Output = A∨B 
+ ---| 
+ B 
+```</p>
+<p class="document-paragraph">3. NOT Gate 
+``` 
+Input ---|>o--- Output 
+```</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Boolean algebra provides a mathematical framework for logical operations 
+2. The fundamental laws allow for systematic simpliﬁcation of complex expressions 
+3. Truth tables can represent any boolean function 
+4. Applications extend to digital circuit design and computer science</p>
+<p class="document-paragraph">Next week, we'll begin exploring quantiﬁcation and how it extends our logical toolkit 
+beyond simple true/false values.</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 3 
+ Boolean Algebra 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Boolean Laws and Simpliﬁcation (20 points) 
+1. Simplify the following Boolean expressions. Show your work and cite the laws used at 
+each step. (5 points each)</p>
+<p class="document-paragraph">a) (x ∧ y) ∨ (x ∧ ¬y) ∨ (x ∧ y)</p>
+<p class="document-paragraph">b) ¬(¬x ∨ y) ∧ (x ∨ ¬y)</p>
+<p class="document-paragraph">c) (x ∨ y) ∧ (x ∨ ¬y) ∧ (¬x ∨ y)</p>
+<p class="document-paragraph">d) ¬(x ∧ y) ∨ (x ∧ ¬y)</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part 2: Truth Tables and Boolean Functions (20 points) 
+2. Complete the truth tables for these Boolean functions and determine if they are 
+equivalent: (10 points each)</p>
+<p class="document-paragraph">a) f(x,y) = (x → y) ∧ ¬y 
+ g(x,y) = x ∧ ¬y</p>
+<p class="document-paragraph">b) f(x,y,z) = x ∧ (y ∨ z) 
+ g(x,y,z) = (x ∧ y) ∨ (x ∧ z)</p>
+<p class="document-paragraph">Part 3: Applications (10 points) 
+3. Design a Boolean circuit using AND, OR, and NOT gates to implement the following 
+function: 
+f(x,y) = (x ∧ ¬y) ∨ (¬x ∧ y)</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Draw the circuit diagram and explain what the function does. 
+ Symbolic Logic - Homework 3 
+ Boolean Algebra 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Boolean Laws and Simpliﬁcation (20 points) 
+1. Simplify the following Boolean expressions. Show your work and cite the laws used at 
+each step. (5 points each)</p>
+<p class="document-paragraph">a) (x ∧ y) ∨ (x ∧ ¬y) ∨ (x ∧ y)</p>
+<p class="document-paragraph">Answer: 
+ (x ∧ y) ∨ (x ∧ ¬y) ∨ (x ∧ y) 
+ = (x ∧ y) ∨ (x ∧ ¬y) [Idempotent Law] 
+ = x ∧ (y ∨ ¬y) [Distributive Law] 
+ = x ∧ 1 [Complement Law] 
+ = x [Identity Law]</p>
+<p class="document-paragraph">b) ¬(¬x ∨ y) ∧ (x ∨ ¬y)</p>
+<p class="document-paragraph">Answer: 
+ ¬(¬x ∨ y) ∧ (x ∨ ¬y) 
+ = (x ∧ ¬y) ∧ (x ∨ ¬y) [De Morgan's Law] 
+ = x ∧ ¬y [Absorption Law]</p>
+<p class="document-paragraph">c) (x ∨ y) ∧ (x ∨ ¬y) ∧ (¬x ∨ y)</p>
+<p class="document-paragraph">Answer: 
+ (x ∨ y) ∧ (x ∨ ¬y) ∧ (¬x ∨ y) 
+ = x ∨ (y ∧ ¬y) [Distributive Law] 
+ = x ∨ 0 [Complement Law] 
+ = x [Identity Law]</p>
+<p class="document-paragraph">d) ¬(x ∧ y) ∨ (x ∧ ¬y)</p>
+<p class="document-paragraph">Answer: 
+ ¬(x ∧ y) ∨ (x ∧ ¬y) 
+ = (¬x ∨ ¬y) ∨ (x ∧ ¬y) [De Morgan's Law] 
+ = ¬y ∨ (x ∧ ¬y) [Absorption Law] 
+ = ¬y [Absorption Law]</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part 2: Truth Tables and Boolean Functions (20 points) 
+2. Complete the truth tables for these Boolean functions and determine if they are 
+equivalent: (10 points each)</p>
+<p class="document-paragraph">a) f(x,y) = (x → y) ∧ ¬y 
+ g(x,y) = x ∧ ¬y</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+| x | y | x → y | ¬y | (x → y) ∧ ¬y | x ∧ ¬y | 
+|---|---|-------|-----|---------------|---------| 
+| 0 | 0 | 1 | 1 | 1 | 0 | 
+| 0 | 1 | 1 | 0 | 0 | 0 | 
+| 1 | 0 | 0 | 1 | 0 | 1 |</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">| 1 | 1 | 1 | 0 | 0 | 0 |</p>
+<p class="document-paragraph">The functions are not equivalent.</p>
+<p class="document-paragraph">b) f(x,y,z) = x ∧ (y ∨ z) 
+ g(x,y,z) = (x ∧ y) ∨ (x ∧ z)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+| x | y | z | y ∨ z | x ∧ (y ∨ z) | x ∧ y | x ∧ z | (x ∧ y) ∨ (x ∧ z) | 
+|---|---|---|-------|--------------|--------|--------|-------------------| 
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 
+| 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 
+| 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 
+| 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 
+| 1 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 
+| 1 | 1 | 0 | 1 | 1 | 1 | 0 | 1 | 
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |</p>
+<p class="document-paragraph">The functions are equivalent (by distributive law).</p>
+<p class="document-paragraph">Part 3: Applications (10 points) 
+3. Design a Boolean circuit using AND, OR, and NOT gates to implement the following 
+function: 
+f(x,y) = (x ∧ ¬y) ∨ (¬x ∧ y)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+``` 
+ x -------|AND|---- 
+ | | 
+ |NOT| |OR|---- Output 
+ | | 
+ y ---|AND|---- 
+```</p>
+<p class="document-paragraph">This is known as the XOR (exclusive or) function.</p>
+<p class="document-paragraph">The function outputs 1 when exactly one input is 1, and 0 otherwise.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Symbolic Logic - First Midterm Examination 
+ Weeks 1-3: Basic Logic, Truth Tables, and Boolean Algebra 
+Total Points: 250 
+Time Allowed: 120 minutes</p>
+<p class="document-paragraph">Part I: Fundamentals of Logic (50 points)</p>
+<p class="document-paragraph">1. (25 points) Deﬁne and give an example of each of the following: 
+ a) Material implication 
+ b) Strict implication 
+ c) Valid argument 
+ d) Sound argument 
+ e) Well-formed formula</p>
+<p class="document-paragraph">2. (25 points) Translate the following into symbolic notation AND its negation: 
+"If either John or Mary goes to the store, then Bill will cook dinner, but only if Sarah helps."</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part II: Truth Tables and Validity (100 points)</p>
+<p class="document-paragraph">3. (50 points) Use a truth table to determine if these arguments are valid: 
+ a) p → q, q → r ∴ p → r 
+ b) p ∨ q, ¬p ∧ ¬q ∴ r</p>
+<p class="document-paragraph">4. (50 points) Complete a truth table for: 
+((p → q) ∧ ¬r) ↔ (p ∧ (q ∨ ¬r))</p>
+<p class="document-paragraph">Part III: Boolean Algebra (100 points)</p>
+<p class="document-paragraph">5. (50 points) Simplify using Boolean algebra laws (show all steps): 
+ ((x ∧ y) ∨ (x ∧ ¬y)) ∧ (x ∨ y)</p>
+<p class="document-paragraph">6. (50 points) Design a Boolean circuit for: 
+f(x,y,z) = (x ∧ y) ∨ (¬x ∧ z)</p>
+<p class="document-paragraph">Draw the circuit diagram and explain how it implements the given function.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Symbolic Logic - First Midterm Examination 
+ Weeks 1-3: Basic Logic, Truth Tables, and Boolean Algebra 
+Total Points: 250 
+Time Allowed: 120 minutes</p>
+<p class="document-paragraph">Part I: Fundamentals of Logic (50 points)</p>
+<p class="document-paragraph">1. (25 points) Deﬁne and give an example of each of the following: 
+ a) Material implication 
+ b) Strict implication 
+ c) Valid argument 
+ d) Sound argument 
+ e) Well-formed formula</p>
+<p class="document-paragraph">Answer: 
+a) Material implication: A truth-functional conditional that is false only when the 
+antecedent is true and consequent false. 
+ Example: "If it rains, then the ground is wet." (p → q)</p>
+<p class="document-paragraph">b) Strict implication: A conditional expressing logical necessity. 
+ Example: "If x is a triangle, then x has three sides." (Necessarily true by deﬁnition)</p>
+<p class="document-paragraph">c) Valid argument: An argument where it's impossible for all premises to be true and 
+conclusion false. 
+ Example: 
+ All men are mortal. 
+ Socrates is a man. 
+ Therefore, Socrates is mortal.</p>
+<p class="document-paragraph">d) Sound argument: A valid argument with true premises. 
+ Example: The above argument about Socrates is also sound because its premises are 
+true.</p>
+<p class="document-paragraph">e) Well-formed formula: An expression that follows the formal rules of logical syntax. 
+ Example: (p ∧ q) → r is well-formed; p ∧ → q is not.</p>
+<p class="document-paragraph">2. (25 points) Translate the following into symbolic notation AND its negation: 
+"If either John or Mary goes to the store, then Bill will cook dinner, but only if Sarah helps."</p>
+<p class="document-paragraph">Answer: 
+Let: j = "John goes to the store" 
+ m = "Mary goes to the store" 
+ b = "Bill will cook dinner" 
+ s = "Sarah helps"</p>
+<p class="document-paragraph">Translation: ((j ∨ m) → b) ∧ (b → s) 
+Negation: ¬(((j ∨ m) → b) ∧ (b → s)) 
+ = ¬((j ∨ m) → b) ∨ ¬(b → s) 
+ = ((j ∨ m) ∧ ¬b) ∨ (b ∧ ¬s)</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part II: Truth Tables and Validity (100 points)</p>
+<p class="document-paragraph">3. (50 points) Use a truth table to determine if these arguments are valid: 
+ a) p → q, q → r ∴ p → r 
+ b) p ∨ q, ¬p ∧ ¬q ∴ r</p>
+<p class="document-paragraph">Answer:</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">a) 
+| p | q | r | p → q | q → r | p → r | 
+|---|---|---|-------|-------|-------| 
+| T | T | T | T | T | T | 
+| T | T | F | T | F | F | 
+| T | F | T | F | T | T | 
+| T | F | F | F | T | F | 
+| F | T | T | T | T | T | 
+| F | T | F | T | F | T | 
+| F | F | T | T | T | T | 
+| F | F | F | T | T | T |</p>
+<p class="document-paragraph">Valid: In all rows where premises (p → q, q → r) are true, conclusion (p → r) is true.</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">b) 
+| p | q | r | p ∨ q | ¬p | ¬q | ¬p ∧ ¬q | 
+|---|---|---|-------|-----|-----|---------| 
+| T | T | T | T | F | F | F | 
+| T | T | F | T | F | F | F | 
+| T | F | T | T | F | T | F | 
+| T | F | F | T | F | T | F | 
+| F | T | T | T | T | F | F | 
+| F | T | F | T | T | F | F | 
+| F | F | T | F | T | T | T | 
+| F | F | F | F | T | T | T |</p>
+<p class="document-paragraph">Invalid: Premises can be true (p ∨ q = F, ¬p ∧ ¬q = T) while conclusion (r) is false.</p>
+<p class="document-paragraph">4. (50 points) Complete a truth table for: 
+((p → q) ∧ ¬r) ↔ (p ∧ (q ∨ ¬r))</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+| p | q | r | p → q | ¬r | (p → q) ∧ ¬r | q ∨ ¬r | p ∧ (q ∨ ¬r) | ((p → q) ∧ ¬r) ↔ (p ∧ (q ∨ ¬r)) | 
+|---|---|---|-------|-----|---------------|---------|---------------|-----------------------------------| 
+| T | T | T | T | F | F | T | T | T | 
+| T | T | F | T | T | T | T | T | T | 
+| T | F | T | F | F | F | F | F | T | 
+| T | F | F | F | T | F | T | T | F | 
+| F | T | T | T | F | F | T | F | T | 
+| F | T | F | T | T | T | T | F | F | 
+| F | F | T | T | F | F | F | F | T | 
+| F | F | F | T | T | T | T | F | F |</p>
+<p class="document-paragraph">Part III: Boolean Algebra (100 points)</p>
+<p class="document-paragraph">5. (50 points) Simplify using Boolean algebra laws (show all steps): 
+ ((x ∧ y) ∨ (x ∧ ¬y)) ∧ (x ∨ y)</p>
+<p class="document-paragraph">Answer: 
+((x ∧ y) ∨ (x ∧ ¬y)) ∧ (x ∨ y) 
+= [x ∧ (y ∨ ¬y)] ∧ (x ∨ y) [Distributive Law] 
+= (x ∧ 1) ∧ (x ∨ y) [Complement Law] 
+= x ∧ (x ∨ y) [Identity Law] 
+= x [Absorption Law]</p>
+<p class="document-paragraph">6. (50 points) Design a Boolean circuit for: 
+f(x,y,z) = (x ∧ y) ∨ (¬x ∧ z)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+``` 
+ x -------|AND|---- 
+ | | 
+ y ---- |OR|---- Output 
+ | | 
+ x ---|NOT|------|AND|---- 
+ | 
+ z -------------- 
+```</p>
+<p class="document-paragraph">Explanation: 
+- Top path computes (x ∧ y) 
+- Bottom path computes (¬x ∧ z) 
+- Final OR gate combines the results 
+ Introduction to Quantiﬁcation 
+ Week 4: Quantiﬁer Logic and Translation</p>
+<p class="document-paragraph font-bold text-lg mb-4">Basic Concepts of Quantiﬁcation</p>
+<p class="document-paragraph">1. Universal Quantiﬁer (∀) 
+ Means "for all" or "for every" 
+ Example: ∀x(Px) means "For all x, P is true of x" 
+ Common natural language expressions: 
+ "Every" 
+ "All" 
+ "Each" 
+ "Any" 
+ "No matter which"</p>
+<p class="document-paragraph">2. Existential Quantiﬁer (∃) 
+ Means "there exists" or "there is at least one" 
+ Example: ∃x(Px) means "There exists an x such that P is true of x" 
+ Common natural language expressions: 
+ "Some" 
+ "There exists" 
+ "There is" 
+ "At least one" 
+ "For some"</p>
+<p class="document-paragraph">Domain of Discourse 
+ The set of all objects that variables can range over 
+ Must be speciﬁed or understood from context 
+ Examples: 
+ All real numbers 
+ All humans 
+ All integers 
+ All students in this class</p>
+<p class="document-paragraph">Predicates 
+ Functions that return true or false for given arguments 
+ Examples: 
+ P(x): "x is prime" 
+ L(x,y): "x loves y" 
+ G(x): "x is greater than 5"</p>
+<p class="document-paragraph">Basic Translation Examples</p>
+<p class="document-paragraph">1. "All dogs are mammals" 
+ Domain: All animals 
+ Let D(x): x is a dog 
+ Let M(x): x is a mammal 
+ Translation: ∀x(D(x) → M(x))</p>
+<p class="document-paragraph">2. "Some students study logic" 
+ Domain: All students 
+ Let S(x): x studies logic 
+ Translation: ∃x(S(x))</p>
+<p class="document-paragraph">3. "No one likes taxes" 
+ Domain: All people 
+ Let L(x): x likes taxes 
+ Translation: ¬∃x(L(x)) 
+ Equivalent to: ∀x(¬L(x))</p>
+<p class="document-paragraph">Multiple Quantiﬁers</p>
+<p class="document-paragraph">1. Order Matters 
+ ∀x∃y vs ∃y∀x can mean different things 
+ Example: 
+ "Everyone loves someone" vs "Someone is loved by everyone" 
+ ∀x∃y(L(x,y)) vs ∃y∀x(L(x,y))</p>
+<p class="document-paragraph">2. Examples with Multiple Quantiﬁers:</p>
+<p class="document-paragraph">a) "Everyone has a mother" 
+ Domain: All people 
+ M(x,y): x is the mother of y 
+ Translation: ∀x∃y(M(y,x))</p>
+<p class="document-paragraph">b) "Some people love everyone" 
+ Domain: All people 
+ L(x,y): x loves y 
+ Translation: ∃x∀y(L(x,y))</p>
+<p class="document-paragraph">Advanced Translation Examples</p>
+<p class="document-paragraph">1. "Between any two real numbers there is another real number" 
+ Domain: Real numbers 
+ Translation: ∀x∀y∃z((x < y) → ((x < z) ∧ (z < y)))</p>
+<p class="document-paragraph">2. "For every positive number there is a smaller positive number" 
+ Domain: Real numbers 
+ Translation: ∀x((x > 0) → ∃y((y > 0) ∧ (y < x)))</p>
+<p class="document-paragraph">Negating Quantiﬁed Statements</p>
+<p class="document-paragraph">1. Rules: 
+ ¬∀x(Px) ≡ ∃x(¬Px) 
+ ¬∃x(Px) ≡ ∀x(¬Px)</p>
+<p class="document-paragraph">2. Examples: 
+ "Not everyone is happy" 
+ ¬∀x(H(x)) ≡ ∃x(¬H(x)) 
+ "There is no free lunch" 
+ ¬∃x(F(x)) ≡ ∀x(¬F(x))</p>
+<p class="document-paragraph">Practice Problems</p>
+<p class="document-paragraph">1. Translate: 
+ "Every student who studies passes" 
+ Domain: All students 
+ S(x): x studies 
+ P(x): x passes 
+ Answer: ∀x(S(x) → P(x))</p>
+<p class="document-paragraph">2. Negate: 
+ "All mathematicians are logical" 
+ Original: ∀x(M(x) → L(x)) 
+ Negation: ∃x(M(x) ∧ ¬L(x))</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Quantiﬁers allow us to make statements about collections of objects 
+2. Order of quantiﬁers matters 
+3. Translation requires careful attention to logical structure 
+4. Negation of quantiﬁed statements follows speciﬁc rules</p>
+<p class="document-paragraph">Next week, we'll explore more advanced quantiﬁcation concepts and their applications to 
+mathematical statements, including the famous epsilon-delta deﬁnition of limits.</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 4 
+ Introduction to Quantiﬁcation 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Basic Translation (20 points) 
+Translate each statement into symbolic logic using quantiﬁers. Clearly state your predicate 
+symbols and domain. (5 points each)</p>
+<p class="document-paragraph">1. "Every philosopher is wise"</p>
+<p class="document-paragraph">2. "Some students failed but some students passed"</p>
+<p class="document-paragraph">3. "No one loves everyone"</p>
+<p class="document-paragraph">4. "Between any two distinct points, there is another point"</p>
+<p class="document-paragraph">Part 2: Negations (15 points) 
+Negate each statement, then simplify using quantiﬁer negation rules. Show your work. (5 
+points each)</p>
+<p class="document-paragraph">1. ∀x(P(x) → Q(x))</p>
+<p class="document-paragraph">2. ∃x∀y(R(x,y))</p>
+<p class="document-paragraph">3. ∀x∃y(P(x) → Q(y))</p>
+<p class="document-paragraph">Part 3: Analysis and Applications (15 points)</p>
+<p class="document-paragraph">Consider these two statements: 
+1. "Everyone loves someone" 
+2. "Someone is loved by everyone"</p>
+<p class="document-paragraph">a) (5 points) Translate both statements into symbolic logic.</p>
+<p class="document-paragraph">b) (5 points) Are these statements logically equivalent? Explain why or why not.</p>
+<p class="document-paragraph">c) (5 points) Write the negation of both statements.</p>
+<p class="document-paragraph">Note: For full credit, explain your reasoning and show all steps in your work.</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 4 
+ Introduction to Quantiﬁcation 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Basic Translation (20 points) 
+Translate each statement into symbolic logic using quantiﬁers. Clearly state your predicate 
+symbols and domain. (5 points each)</p>
+<p class="document-paragraph">1. "Every philosopher is wise"</p>
+<p class="document-paragraph">Answer: 
+ Domain: All people 
+ P(x): x is a philosopher 
+ W(x): x is wise 
+ Translation: ∀x(P(x) → W(x))</p>
+<p class="document-paragraph">2. "Some students failed but some students passed"</p>
+<p class="document-paragraph">Answer: 
+ Domain: All students 
+ F(x): x failed 
+ P(x): x passed 
+ Translation: ∃x(F(x)) ∧ ∃x(P(x))</p>
+<p class="document-paragraph">3. "No one loves everyone"</p>
+<p class="document-paragraph">Answer: 
+ Domain: All people 
+ L(x,y): x loves y 
+ Translation: ¬∃x∀y(L(x,y)) 
+ Alternative: ∀x∃y(¬L(x,y))</p>
+<p class="document-paragraph">4. "Between any two distinct points, there is another point"</p>
+<p class="document-paragraph">Answer: 
+ Domain: All points 
+ Translation: ∀x∀y∃z(x ≠ y → ((x < z) ∧ (z < y)))</p>
+<p class="document-paragraph">Part 2: Negations (15 points) 
+Negate each statement, then simplify using quantiﬁer negation rules. Show your work. (5 
+points each)</p>
+<p class="document-paragraph">1. ∀x(P(x) → Q(x))</p>
+<p class="document-paragraph">Answer: 
+ ¬∀x(P(x) → Q(x)) 
+ ∃x¬(P(x) → Q(x)) 
+ ∃x(P(x) ∧ ¬Q(x))</p>
+<p class="document-paragraph">2. ∃x∀y(R(x,y))</p>
+<p class="document-paragraph">Answer: 
+ ¬∃x∀y(R(x,y)) 
+ ∀x¬∀y(R(x,y)) 
+ ∀x∃y(¬R(x,y))</p>
+<p class="document-paragraph">3. ∀x∃y(P(x) → Q(y))</p>
+<p class="document-paragraph">Answer: 
+ ¬∀x∃y(P(x) → Q(y)) 
+ ∃x¬∃y(P(x) → Q(y)) 
+ ∃x∀y¬(P(x) → Q(y)) 
+ ∃x∀y(P(x) ∧ ¬Q(y))</p>
+<p class="document-paragraph">Part 3: Analysis and Applications (15 points)</p>
+<p class="document-paragraph">Consider these two statements: 
+1. "Everyone loves someone" 
+2. "Someone is loved by everyone"</p>
+<p class="document-paragraph">a) (5 points) Translate both statements into symbolic logic.</p>
+<p class="document-paragraph">Answer: 
+ L(x,y): x loves y 
+ Statement 1: ∀x∃y(L(x,y)) 
+ Statement 2: ∃y∀x(L(x,y))</p>
+<p class="document-paragraph">b) (5 points) Are these statements logically equivalent? Explain why or why not.</p>
+<p class="document-paragraph">Answer: 
+No, they are not equivalent. Statement 1 allows each person to love a different person 
+(everyone picks someone to love), while Statement 2 requires the existence of a single 
+person who is loved by everyone (one person is universally loved).</p>
+<p class="document-paragraph">To see this isn't equivalent, consider a world with just Alice and Bob where Alice loves Alice 
+and Bob loves Bob. This satisﬁes Statement 1 but not Statement 2.</p>
+<p class="document-paragraph">c) (5 points) Write the negation of both statements.</p>
+<p class="document-paragraph">Answer: 
+ Negation of 1: ∃x∀y(¬L(x,y)) 
+ "There is someone who loves no one"</p>
+<p class="document-paragraph">Negation of 2: ∀y∃x(¬L(x,y)) 
+ "For every person, there is someone who doesn't love them"</p>
+<p class="document-paragraph">Advanced Quantiﬁcation and Mathematical Applications 
+ Week 5: Complex Translation and Mathematical Logic</p>
+<p class="document-paragraph">Advanced Translation Patterns</p>
+<p class="document-paragraph">1. Uniqueness Quantiﬁer (∃!) 
+ Means "there exists exactly one" 
+ Example: ∃!x(Px) 
+ Equivalent to: ∃x(Px ∧ ∀y(Py → y = x)) 
+ Example: "There is exactly one even prime number" 
+ ∃x(Prime(x) ∧ Even(x) ∧ ∀y((Prime(y) ∧ Even(y)) → y = x))</p>
+<p class="document-paragraph">2. At Least/At Most/Exactly n 
+ "At least n": ∃x₁...∃xₙ(P(x₁) ∧...∧ P(xₙ) ∧ x₁≠x₂ ∧...∧ xₙ₋₁≠xₙ) 
+ "At most n": ∀x₁...∀xₙ₊₁(P(x₁) ∧...∧ P(xₙ₊₁) → (x₁=x₂ ∨...∨ xₙ=xₙ₊₁)) 
+ "Exactly n": Conjunction of "at least n" and "at most n"</p>
+<p class="document-paragraph">Complex Mathematical Statements</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">1. Continuity 
+ A function f is continuous at a point c if: 
+ ∀ε>0 ∃δ>0 ∀x(|x-c|<δ → |f(x)-f(c)|<ε)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">2. Limit Deﬁnition 
+ The limit of f(x) as x approaches c is L if: 
+ ∀ε>0 ∃δ>0 ∀x(0<|x-c|<δ → |f(x)-L|<ε)</p>
+<p class="document-paragraph">The Epsilon-Delta Deﬁnition in Detail</p>
+<p class="document-paragraph">1. Components 
+ ε (epsilon): measures closeness to limit value 
+ δ (delta): measures closeness to input value 
+ Relationship: For any ε, we can ﬁnd δ</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">2. Breaking Down the Deﬁnition 
+ ∀ε>0: "For any positive error margin" 
+ ∃δ>0: "There exists some positive distance" 
+ ∀x: "For all input values" 
+ 0<|x-c|<δ: "Within δ of c (but not equal to c)" 
+ |f(x)-L|<ε: "f(x) is within ε of L"</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">3. Example: lim(x→2) x² = 4 
+ ∀ε>0 ∃δ>0 ∀x(0<|x-2|<δ → |x²-4|<ε) 
+ To prove: For given ε, ﬁnd δ where: 
+ |x-2|<δ implies |x²-4|<ε 
+ |x²-4| = |(x+2)(x-2)| = |x+2||x-2| 
+ When |x-2|<1, |x+2|<5 
+ Choose δ = min(1, ε/5)</p>
+<p class="document-paragraph">Advanced Translation Examples</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">1. Inﬁnite Sequence Properties 
+ Bounded: ∃M∀n(|aₙ|≤M) 
+ Convergent: ∃L∀ε>0∃N∀n(n>N → |aₙ-L|<ε) 
+ Cauchy: ∀ε>0∃N∀m∀n(m,n>N → |aₘ-aₙ|<ε)</p>
+<p class="document-paragraph">2. Function Properties 
+ One-to-one: ∀x∀y(f(x)=f(y) → x=y) 
+ Onto: ∀y∃x(f(x)=y) 
+ Monotonic increasing: ∀x∀y(x<y → f(x)<f(y))</p>
+<p class="document-paragraph">Practical Application Examples</p>
+<p class="document-paragraph">1. Database Queries 
+ "Find all students who passed all courses" 
+ ∃x(Student(x) ∧ ∀y(Course(y) → Passed(x,y)))</p>
+<p class="document-paragraph">2. Software Speciﬁcations 
+ "Every request eventually gets a response" 
+ ∀x(Request(x) → ∃y(Response(y,x)))</p>
+<p class="document-paragraph">Common Translation Patterns</p>
+<p class="document-paragraph">1. Only if 
+ "P only if Q" becomes P → Q 
+ Example: "A number is even only if it's divisible by 2" 
+ ∀x(Even(x) → Divisible(x,2))</p>
+<p class="document-paragraph">2. Unless 
+ "P unless Q" becomes P ∨ Q 
+ Example: "I'll study unless I'm tired" 
+ Study(x) ∨ Tired(x)</p>
+<p class="document-paragraph">3. Neither/Nor 
+ "Neither P nor Q" becomes ¬P ∧ ¬Q 
+ Example: "Neither prime nor composite" 
+ ¬Prime(x) ∧ ¬Composite(x)</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Advanced quantiﬁcation allows precise expression of complex ideas 
+2. Mathematical deﬁnitions often involve multiple nested quantiﬁers 
+3. Understanding quantiﬁer order is crucial for correct interpretation 
+4. Epsilon-delta proofs follow a standard pattern 
+5. Translation requires attention to subtle linguistic differences</p>
+<p class="document-paragraph">Next week, we'll explore models and their use in proving invalidity and consistency.</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 5 
+ Advanced Quantiﬁcation and Mathematical Analysis 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Advanced Translation (20 points)</p>
+<p class="document-paragraph">1. (10 points) Translate each statement into symbolic logic. State your predicates and 
+domain.</p>
+<p class="document-paragraph">a) "There is exactly one largest prime number less than 10."</p>
+<p class="document-paragraph">b) "For any two different real numbers, their average lies between them."</p>
+<p class="document-paragraph">2. (10 points) Negate and simplify the following statements:</p>
+<p class="document-paragraph">a) ∀x∃y∀z(P(x,y) → Q(y,z))</p>
+<p class="document-paragraph">b) ∃!x∀y(P(x) ∧ Q(x,y))</p>
+<p class="document-paragraph">Part 2: Epsilon-Delta Analysis (20 points)</p>
+<p class="document-paragraph">3. (10 points) Prove that lim(x→3) x² = 9 using the epsilon-delta deﬁnition.</p>
+<p class="document-paragraph">4. (10 points) Write the formal epsilon-delta deﬁnition for continuity of f(x) = x² at x = 2.</p>
+<p class="document-paragraph">Part 3: Complex Mathematical Statements (10 points)</p>
+<p class="document-paragraph">5. (5 points) Express the statement "A function f is uniformly continuous on an interval 
+[a,b]" in symbolic logic.</p>
+<p class="document-paragraph">6. (5 points) Translate the deﬁnition of a Cauchy sequence into English and explain why it 
+doesn't use a limit L in its deﬁnition.</p>
+<p class="document-paragraph">Note: For full credit: 
+- Show all work in epsilon-delta proofs 
+- Clearly state any predicates or domains used in translations 
+- Provide step-by-step reasoning for complex negations</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 5 
+ Advanced Quantiﬁcation and Mathematical Analysis 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Advanced Translation (20 points)</p>
+<p class="document-paragraph">1. (10 points) Translate each statement into symbolic logic. State your predicates and 
+domain.</p>
+<p class="document-paragraph">a) "There is exactly one largest prime number less than 10."</p>
+<p class="document-paragraph">Answer: 
+Domain: Natural numbers 
+P(x): x is prime 
+L(x,y): x is less than y</p>
+<p class="document-paragraph">∃x(P(x) ∧ L(x,10) ∧ ∀y((P(y) ∧ L(y,10)) → (x ≥ y)) ∧ 
+ ∀z((P(z) ∧ L(z,10) ∧ (x ≥ z)) → x = z))</p>
+<p class="document-paragraph">b) "For any two different real numbers, their average lies between them."</p>
+<p class="document-paragraph">Answer: 
+Domain: Real numbers 
+Translation: ∀x∀y(x ≠ y → ∃z((z = (x+y)/2) ∧ ((x < z ∧ z < y) ∨ (y < z ∧ z < x))))</p>
+<p class="document-paragraph">2. (10 points) Negate and simplify the following statements:</p>
+<p class="document-paragraph">a) ∀x∃y∀z(P(x,y) → Q(y,z))</p>
+<p class="document-paragraph">Answer: 
+¬∀x∃y∀z(P(x,y) → Q(y,z)) 
+≡ ∃x∀y∃z¬(P(x,y) → Q(y,z)) 
+≡ ∃x∀y∃z(P(x,y) ∧ ¬Q(y,z))</p>
+<p class="document-paragraph">b) ∃!x∀y(P(x) ∧ Q(x,y))</p>
+<p class="document-paragraph">Answer: 
+¬∃!x∀y(P(x) ∧ Q(x,y)) 
+≡ ¬∃x(P(x) ∧ ∀y(Q(x,y)) ∧ ∀z((P(z) ∧ ∀y(Q(z,y))) → z = x)) 
+≡ ∀x¬(P(x) ∧ ∀y(Q(x,y))) ∨ ∃z∃w((P(z) ∧ ∀y(Q(z,y))) ∧ (P(w) ∧ ∀y(Q(w,y))) ∧ z ≠ w)</p>
+<p class="document-paragraph">Part 2: Epsilon-Delta Analysis (20 points)</p>
+<p class="document-paragraph">3. (10 points) Prove that lim(x→3) x² = 9 using the epsilon-delta deﬁnition.</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+We need to prove: ∀ε>0 ∃δ>0 ∀x(0<|x-3|<δ → |x²-9|<ε)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Proof: 
+|x²-9| = |x+3||x-3| 
+When |x-3| < 1, we have 2 < x < 4, so |x+3| < 7</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Let δ = min(1, ε/7) 
+Then |x-3| < δ implies |x²-9| = |x+3||x-3| < 7δ ≤ ε</p>
+<p class="document-paragraph">4. (10 points) Write the formal epsilon-delta deﬁnition for continuity of f(x) = x² at x = 2.</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+∀ε>0 ∃δ>0 ∀x(|x-2|<δ → |x²-4|<ε)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">To ﬁnd δ given ε: 
+|x²-4| = |x+2||x-2| 
+When |x-2| < 1, |x+2| < 5 
+Choose δ = min(1, ε/5)</p>
+<p class="document-paragraph">Part 3: Complex Mathematical Statements (10 points)</p>
+<p class="document-paragraph">5. (5 points) Express the statement "A function f is uniformly continuous on an interval 
+[a,b]" in symbolic logic.</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+∀ε>0 ∃δ>0 ∀x∀y((x∈[a,b] ∧ y∈[a,b] ∧ |x-y|<δ) → |f(x)-f(y)|<ε)</p>
+<p class="document-paragraph">6. (5 points) Translate the deﬁnition of a Cauchy sequence into English and explain why it 
+doesn't use a limit L in its deﬁnition.</p>
+<p class="document-paragraph">Answer: 
+Symbolic form: ∀ε>0 ∃N∀m∀n(m,n>N → |aₘ-aₙ|<ε)</p>
+<p class="document-paragraph">English: "For any positive error margin ε, there exists some point N in the sequence after 
+which any two terms in the sequence differ by less than ε."</p>
+<p class="document-paragraph">Explanation: The Cauchy criterion doesn't reference a limit L because it deﬁnes 
+convergence based on the behavior of the sequence terms relative to each other, not to 
+some external value. This makes it useful in spaces where limits might not exist or be easily 
+deﬁnable.</p>
+<p class="document-paragraph">Grading Rubric: 
+- Part 1: 10 points each for correct translations and negations 
+- Part 2: 5 points for correct formula, 5 points for correct proof/explanation 
+- Part 3: 5 points each for correct translation and explanation</p>
+<p class="document-paragraph">Models and Proof Theory 
+ Week 6: Using Models to Prove Invalidity and Consistency</p>
+<p class="document-paragraph">Introduction to Models</p>
+<p class="document-paragraph">1. Deﬁnition of a Model 
+ A mathematical structure that interprets: 
+ Domain of discourse 
+ Predicates 
+ Functions 
+ Constants</p>
+<p class="document-paragraph">Assigns truth values to formulas</p>
+<p class="document-paragraph">2. Components of a Model M 
+ Universe/Domain (|M|) 
+ Interpretation function (I) 
+ Variable assignment (v)</p>
+<p class="document-paragraph">Using Models to Prove Invalidity</p>
+<p class="document-paragraph">1. Strategy 
+ To prove an argument invalid: 
+ Find a model where premises are true 
+ But conclusion is false 
+ One counterexample suffices</p>
+<p class="document-paragraph">2. Example 1: Proving Invalidity 
+ Argument: ∀x(P(x) → Q(x)), ∃xP(x) ∴ ∀xQ(x) 
+ Countermodel: 
+ Domain = {a, b} 
+ P = {a} 
+ Q = {a} 
+ Analysis: 
+ ∀x(P(x) → Q(x)) is true (vacuously for b) 
+ ∃xP(x) is true (because of a) 
+ ∀xQ(x) is false (because b∉Q)</p>
+<p class="document-paragraph">3. Example 2: More Complex Invalidation 
+ Argument: ∀x∃yR(x,y) ∴ ∃y∀xR(x,y) 
+ Countermodel: 
+ Domain = {1, 2} 
+ R = {(1,1), (2,2)} 
+ Analysis: 
+ ∀x∃yR(x,y) is true (each x relates to itself) 
+ ∃y∀xR(x,y) is false (no y relates to all x)</p>
+<p class="document-paragraph">Consistency Proofs</p>
+<p class="document-paragraph">1. Deﬁnition 
+ A set of sentences is consistent if: 
+ There exists a model satisfying all sentences 
+ No contradiction can be derived</p>
+<p class="document-paragraph">2. Methods to Prove Consistency 
+ Construct a model satisfying all sentences</p>
+<p class="document-paragraph">Show inability to derive contradiction 
+ Use semantic tableaux</p>
+<p class="document-paragraph">3. Example: Proving Consistency 
+ Sentences: 
+ ∀x∃yR(x,y) 
+ ∀x¬R(x,x) 
+ ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z)) 
+ Model: 
+ Domain = {1, 2, 3} 
+ R = {(1,2), (2,3), (1,3)} 
+ Veriﬁcation: 
+ Each x has a y it relates to 
+ No element relates to itself 
+ Transitivity holds</p>
+<p class="document-paragraph">Model Theory Techniques</p>
+<p class="document-paragraph">1. Finite Models 
+ Useful for disproving universally quantiﬁed statements 
+ Easy to verify all cases 
+ Example: 
+ To disprove "All groups are abelian" 
+ Use ﬁnite non-abelian group as model</p>
+<p class="document-paragraph">2. Inﬁnite Models 
+ Required for some mathematical structures 
+ Often use familiar structures (ℕ, ℤ, ℝ) 
+ Example: 
+ Natural numbers with usual < relation 
+ Models "No largest element exists"</p>
+<p class="document-paragraph">3. Model Construction Strategies 
+ Start with smallest possible domain 
+ Add elements only as needed 
+ Use diagrams or tables for relations 
+ Check all required properties</p>
+<p class="document-paragraph">Advanced Applications</p>
+<p class="document-paragraph">1. Independence Proofs 
+ Show axiom not derivable from others 
+ Need two models: 
+ One satisfying all axioms</p>
+<p class="document-paragraph">One satisfying all but the target axiom</p>
+<p class="document-paragraph">2. Categoricity 
+ All models are isomorphic 
+ Example: 
+ Complete ordered ﬁelds 
+ All isomorphic to real numbers</p>
+<p class="document-paragraph">Practical Examples</p>
+<p class="document-paragraph">1. Graph Theory 
+ Model: Vertices and edges 
+ Properties: 
+ Connectivity 
+ Coloring 
+ Paths</p>
+<p class="document-paragraph">2. Number Theory 
+ Model: Numbers with operations 
+ Properties: 
+ Divisibility 
+ Primality 
+ Ordering</p>
+<p class="document-paragraph">Common Mistakes to Avoid</p>
+<p class="document-paragraph">1. Domain Selection 
+ Don't make domain unnecessarily large 
+ Ensure domain includes all needed elements 
+ Check for implicit assumptions</p>
+<p class="document-paragraph">2. Relation Deﬁnition 
+ Must specify complete relation 
+ Check all pairs/tuples 
+ Verify properties (transitivity, etc.)</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Models provide concrete examples or counterexamples 
+2. One countermodel sufficient for invalidity 
+3. Consistency requires showing possible satisfaction 
+4. Start with simple models when possible 
+5. Check all required properties systematically</p>
+<p class="document-paragraph">Next week, we'll explore recursivity and deﬁnable classes.</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 6 
+ Models and Proofs 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Invalidity Proofs (20 points)</p>
+<p class="document-paragraph">1. (10 points) Provide a countermodel to prove each argument is invalid:</p>
+<p class="document-paragraph">a) ∀x(P(x) → Q(x)), ∀x(Q(x) → R(x)) ∴ ∀x(P(x) → P(x))</p>
+<p class="document-paragraph">b) ∀x∃yL(x,y) ∴ ∃y∀xL(x,y) 
+(L(x,y) means "x loves y")</p>
+<p class="document-paragraph">2. (10 points) Show that these statements are not equivalent by providing a countermodel: 
+"Everyone has a friend" and "Someone is friends with everyone"</p>
+<p class="document-paragraph">Part 2: Consistency Proofs (20 points)</p>
+<p class="document-paragraph">3. (10 points) Prove the following set of sentences is consistent by providing a model: 
+ ∀x∃y(x < y) 
+ ∀x∀y∀z((x < y ∧ y < z) → x < z) 
+ ∀x¬(x < x)</p>
+<p class="document-paragraph">4. (10 points) Show the following set of sentences is consistent: 
+ ∃xP(x) 
+ ∃x¬P(x) 
+ ∀x∀y(R(x,y) → (P(x) ↔ P(y)))</p>
+<p class="document-paragraph">Part 3: Model Analysis (10 points)</p>
+<p class="document-paragraph">5. (5 points) Given the model M with domain {1,2,3} and relation R = {(1,2), (2,3), (1,3)}, 
+determine whether each statement is true or false:</p>
+<p class="document-paragraph">a) ∀x∃yR(x,y) 
+b) ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z)) 
+c) ∃xR(x,x) 
+d) ∀x∃y(R(x,y) ∧ ¬R(y,x))</p>
+<p class="document-paragraph">6. (5 points) For the following properties, give the smallest possible domain size needed for 
+a model where the property holds:</p>
+<p class="document-paragraph">a) ∃x∃y(x ≠ y ∧ ∀z(z = x ∨ z = y)) 
+b) ∃x∃y∃z(R(x,y) ∧ R(y,z) ∧ ¬R(x,z))</p>
+<p class="document-paragraph">Note: For full credit: 
+- Clearly specify domains and interpretations in your models 
+- Verify that your models satisfy all required conditions 
+- Explain why your counterexamples work</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 6 
+ Models and Proofs 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Invalidity Proofs (20 points)</p>
+<p class="document-paragraph">1. (10 points) Provide a countermodel to prove each argument is invalid:</p>
+<p class="document-paragraph">a) ∀x(P(x) → Q(x)), ∀x(Q(x) → R(x)) ∴ ∀x(P(x) → P(x))</p>
+<p class="document-paragraph">Answer: 
+This is actually valid! No countermodel exists because the conclusion is a tautology. 
+Explanation: ∀x(P(x) → P(x)) is true in all models, regardless of premises.</p>
+<p class="document-paragraph">b) ∀x∃yL(x,y) ∴ ∃y∀xL(x,y) 
+(L(x,y) means "x loves y")</p>
+<p class="document-paragraph">Answer: 
+Countermodel: 
+ Domain = {a, b} 
+ L = {(a,a), (b,b)} 
+ Veriﬁcation: 
+ ∀x∃yL(x,y) is true (a loves a, b loves b) 
+ ∃y∀xL(x,y) is false (no y is loved by everyone)</p>
+<p class="document-paragraph">2. (10 points) Show that these statements are not equivalent by providing a countermodel: 
+"Everyone has a friend" and "Someone is friends with everyone"</p>
+<p class="document-paragraph">Answer: 
+ Domain = {Alice, Bob} 
+ F(x,y) = "x is friends with y" 
+ F = {(Alice,Alice), (Bob,Bob)}</p>
+<p class="document-paragraph">In this model: 
+ ∀x∃yF(x,y) is true (everyone has themselves as a friend) 
+ ∃y∀xF(x,y) is false (neither person is friends with everyone)</p>
+<p class="document-paragraph">Part 2: Consistency Proofs (20 points)</p>
+<p class="document-paragraph">3. (10 points) Prove the following set of sentences is consistent by providing a model: 
+ ∀x∃y(x < y) 
+ ∀x∀y∀z((x < y ∧ y < z) → x < z) 
+ ∀x¬(x < x)</p>
+<p class="document-paragraph">Answer: 
+Model: (ℕ, <) 
+ Domain: Natural numbers 
+ < is the usual less-than relation 
+Veriﬁcation: 
+ ∀x∃y(x < y): For any n, n+1 exists and n < n+1 
+ Transitivity holds for usual < 
+ ¬(x < x) holds for usual <</p>
+<p class="document-paragraph">4. (10 points) Show the following set of sentences is consistent: 
+ ∃xP(x) 
+ ∃x¬P(x) 
+ ∀x∀y(R(x,y) → (P(x) ↔ P(y)))</p>
+<p class="document-paragraph">Answer: 
+Model: 
+ Domain = {a, b} 
+ P = {a} 
+ R = ∅ (empty relation) 
+Veriﬁcation: 
+ ∃xP(x) true because a ∈ P 
+ ∃x¬P(x) true because b ∉ P 
+ R(x,y) → (P(x) ↔ P(y)) vacuously true as R is empty</p>
+<p class="document-paragraph">Part 3: Model Analysis (10 points)</p>
+<p class="document-paragraph">5. (5 points) Given the model M with domain {1,2,3} and relation R = {(1,2), (2,3), (1,3)}, 
+determine whether each statement is true or false:</p>
+<p class="document-paragraph">a) ∀x∃yR(x,y) 
+b) ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z)) 
+c) ∃xR(x,x) 
+d) ∀x∃y(R(x,y) ∧ ¬R(y,x))</p>
+<p class="document-paragraph">Answer: 
+a) False - 3 has no y where R(3,y) 
+b) True - R is transitive 
+c) False - no element relates to itself</p>
+<p class="document-paragraph">d) True - for 1→2, 2→3</p>
+<p class="document-paragraph">6. (5 points) For the following properties, give the smallest possible domain size needed for 
+a model where the property holds:</p>
+<p class="document-paragraph">a) ∃x∃y(x ≠ y ∧ ∀z(z = x ∨ z = y)) 
+b) ∃x∃y∃z(R(x,y) ∧ R(y,z) ∧ ¬R(x,z))</p>
+<p class="document-paragraph">Answer: 
+a) Domain size = 2 
+ Need exactly two distinct elements 
+ Smaller impossible, larger unnecessary</p>
+<p class="document-paragraph">b) Domain size = 3 
+ Need three elements for non-transitive relation 
+ Example: R = {(1,2), (2,3)} 
+ Cannot be done with fewer elements</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 6 
+ Models and Proofs 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Invalidity Proofs (20 points)</p>
+<p class="document-paragraph">1. (10 points) Provide a countermodel to prove each argument is invalid:</p>
+<p class="document-paragraph">a) ∀x(P(x) → Q(x)), ∀x(Q(x) → R(x)) ∴ ∀x(P(x) → P(x))</p>
+<p class="document-paragraph">b) ∀x∃yL(x,y) ∴ ∃y∀xL(x,y) 
+(L(x,y) means "x loves y")</p>
+<p class="document-paragraph">2. (10 points) Show that these statements are not equivalent by providing a countermodel: 
+"Everyone has a friend" and "Someone is friends with everyone"</p>
+<p class="document-paragraph">Part 2: Consistency Proofs (20 points)</p>
+<p class="document-paragraph">3. (10 points) Prove the following set of sentences is consistent by providing a model: 
+ ∀x∃y(x < y) 
+ ∀x∀y∀z((x < y ∧ y < z) → x < z) 
+ ∀x¬(x < x)</p>
+<p class="document-paragraph">4. (10 points) Show the following set of sentences is consistent: 
+ ∃xP(x) 
+ ∃x¬P(x)</p>
+<p class="document-paragraph">∀x∀y(R(x,y) → (P(x) ↔ P(y)))</p>
+<p class="document-paragraph">Part 3: Model Analysis (10 points)</p>
+<p class="document-paragraph">5. (5 points) Given the model M with domain {1,2,3} and relation R = {(1,2), (2,3), (1,3)}, 
+determine whether each statement is true or false:</p>
+<p class="document-paragraph">a) ∀x∃yR(x,y) 
+b) ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z)) 
+c) ∃xR(x,x) 
+d) ∀x∃y(R(x,y) ∧ ¬R(y,x))</p>
+<p class="document-paragraph">6. (5 points) For the following properties, give the smallest possible domain size needed for 
+a model where the property holds:</p>
+<p class="document-paragraph">a) ∃x∃y(x ≠ y ∧ ∀z(z = x ∨ z = y)) 
+b) ∃x∃y∃z(R(x,y) ∧ R(y,z) ∧ ¬R(x,z))</p>
+<p class="document-paragraph">Note: For full credit: 
+- Clearly specify domains and interpretations in your models 
+- Verify that your models satisfy all required conditions 
+- Explain why your counterexamples work</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 6 
+ Models and Proofs 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Invalidity Proofs (20 points)</p>
+<p class="document-paragraph">1. (10 points) Provide a countermodel to prove each argument is invalid:</p>
+<p class="document-paragraph">a) ∀x(P(x) → Q(x)), ∀x(Q(x) → R(x)) ∴ ∀x(P(x) → P(x))</p>
+<p class="document-paragraph">Answer: 
+This is actually valid! No countermodel exists because the conclusion is a tautology. 
+Explanation: ∀x(P(x) → P(x)) is true in all models, regardless of premises.</p>
+<p class="document-paragraph">b) ∀x∃yL(x,y) ∴ ∃y∀xL(x,y) 
+(L(x,y) means "x loves y")</p>
+<p class="document-paragraph">Answer: 
+Countermodel: 
+ Domain = {a, b} 
+ L = {(a,a), (b,b)}</p>
+<p class="document-paragraph">Veriﬁcation: 
+ ∀x∃yL(x,y) is true (a loves a, b loves b) 
+ ∃y∀xL(x,y) is false (no y is loved by everyone)</p>
+<p class="document-paragraph">2. (10 points) Show that these statements are not equivalent by providing a countermodel: 
+"Everyone has a friend" and "Someone is friends with everyone"</p>
+<p class="document-paragraph">Answer: 
+ Domain = {Alice, Bob} 
+ F(x,y) = "x is friends with y" 
+ F = {(Alice,Alice), (Bob,Bob)}</p>
+<p class="document-paragraph">In this model: 
+ ∀x∃yF(x,y) is true (everyone has themselves as a friend) 
+ ∃y∀xF(x,y) is false (neither person is friends with everyone)</p>
+<p class="document-paragraph">Part 2: Consistency Proofs (20 points)</p>
+<p class="document-paragraph">3. (10 points) Prove the following set of sentences is consistent by providing a model: 
+ ∀x∃y(x < y) 
+ ∀x∀y∀z((x < y ∧ y < z) → x < z) 
+ ∀x¬(x < x)</p>
+<p class="document-paragraph">Answer: 
+Model: (ℕ, <) 
+ Domain: Natural numbers 
+ < is the usual less-than relation 
+Veriﬁcation: 
+ ∀x∃y(x < y): For any n, n+1 exists and n < n+1 
+ Transitivity holds for usual 
+ ¬(x < x) holds for usual</p>
+<p class="document-paragraph">4. (10 points) Show the following set of sentences is consistent: 
+ ∃xP(x) 
+ ∃x¬P(x) 
+ ∀x∀y(R(x,y) → (P(x) ↔ P(y)))</p>
+<p class="document-paragraph">Answer: 
+Model: 
+ Domain = {a, b} 
+ P = {a} 
+ R = ∅ (empty relation) 
+Veriﬁcation: 
+ ∃xP(x) true because a ∈ P</p>
+<p class="document-paragraph">∃x¬P(x) true because b ∉ P 
+ R(x,y) → (P(x) ↔ P(y)) vacuously true as R is empty</p>
+<p class="document-paragraph">Part 3: Model Analysis (10 points)</p>
+<p class="document-paragraph">5. (5 points) Given the model M with domain {1,2,3} and relation R = {(1,2), (2,3), (1,3)}, 
+determine whether each statement is true or false:</p>
+<p class="document-paragraph">a) ∀x∃yR(x,y) 
+b) ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z)) 
+c) ∃xR(x,x) 
+d) ∀x∃y(R(x,y) ∧ ¬R(y,x))</p>
+<p class="document-paragraph">Answer: 
+a) False - 3 has no y where R(3,y) 
+b) True - R is transitive 
+c) False - no element relates to itself 
+d) True - for 1→2, 2→3</p>
+<p class="document-paragraph">6. (5 points) For the following properties, give the smallest possible domain size needed for 
+a model where the property holds:</p>
+<p class="document-paragraph">a) ∃x∃y(x ≠ y ∧ ∀z(z = x ∨ z = y)) 
+b) ∃x∃y∃z(R(x,y) ∧ R(y,z) ∧ ¬R(x,z))</p>
+<p class="document-paragraph">Answer: 
+a) Domain size = 2 
+ Need exactly two distinct elements 
+ Smaller impossible, larger unnecessary</p>
+<p class="document-paragraph">b) Domain size = 3 
+ Need three elements for non-transitive relation 
+ Example: R = {(1,2), (2,3)} 
+ Cannot be done with fewer elements</p>
+<p class="document-paragraph">Recursivity and Non-Recursive Classes 
+ Week 7: From Number Systems to Statement Classes</p>
+<p class="document-paragraph">I. Recursive Number Systems and Their Limits</p>
+<p class="document-paragraph">1. Natural Numbers (ℕ) 
+ Base case: 0 ∈ ℕ 
+ Recursive step: If n ∈ ℕ, then S(n) ∈ ℕ 
+ Complete: Every element reachable from 0 by ﬁnite applications of S</p>
+<p class="document-paragraph">Recursively enumerable: {0, 1, 2, 3, ...}</p>
+<p class="document-paragraph">2. Integers (ℤ) 
+ Base: Natural numbers 
+ Recursive step: If n ∈ ℤ, then -n ∈ ℤ 
+ Complete: All integers reachable by these rules 
+ Recursively enumerable: {0, 1, -1, 2, -2, ...}</p>
+<p class="document-paragraph">3. Rational Numbers (ℚ) 
+ Base: Integers 
+ Recursive step: If p,q ∈ ℤ and q≠0, then p/q ∈ ℚ 
+ Normalization: Reduce to lowest terms 
+ Complete: All fractions constructible from integers 
+ Recursively enumerable via systematic enumeration</p>
+<p class="document-paragraph">II. Non-Recursive Real Numbers (ℝ)</p>
+<p class="document-paragraph">1. Cantor's Diagonal Proof 
+ Assume reals are recursively enumerable 
+ List all numbers between 0 and 1: 
+ r₁ = 0.a₁₁a₁₂a₁₃... 
+ r₂ = 0.a₂₁a₂₂a₂₃... 
+ r₃ = 0.a₃₁a₃₂a₃₃... 
+ Construct new number d = 0.d₁d₂d₃... 
+ Where dₙ ≠ aₙₙ 
+ d differs from every listed number 
+ Therefore, list cannot be complete 
+ ℝ is non-recursive (incomplete)</p>
+<p class="document-paragraph">2. Implications of Non-Recursivity 
+ Cannot enumerate all reals 
+ No effective procedure generates all reals 
+ Uncountably inﬁnite 
+ Associated with incompleteness</p>
+<p class="document-paragraph">III. Completeness vs. Incompleteness</p>
+<p class="document-paragraph">1. Recursive Systems (Complete) 
+ Can be generated by ﬁnite rules 
+ Countably inﬁnite 
+ Examples: 
+ Natural numbers 
+ Integers 
+ Rational numbers</p>
+<p class="document-paragraph">Well-formed formulas 
+ Valid propositional formulas</p>
+<p class="document-paragraph">2. Non-Recursive Systems (Incomplete) 
+ Cannot be generated by ﬁnite rules 
+ Usually uncountably inﬁnite 
+ Examples: 
+ Real numbers 
+ Set of all subsets of ℕ 
+ True arithmetic statements 
+ Valid ﬁrst-order formulas</p>
+<p class="document-paragraph">IV. General Recursive Deﬁnitions</p>
+<p class="document-paragraph">1. Basic Concept 
+ Recursive deﬁnition: deﬁnes objects in terms of previously deﬁned objects 
+ Base case: initial elements 
+ Recursive step: rules for generating new elements 
+ Closure: only elements generated by these rules are in the set</p>
+<p class="document-paragraph">2. Well-Formed Formulas (WFF) 
+ Base: Atomic formulas are WFF 
+ Recursive steps: 
+ If A is WFF, then ¬A is WFF 
+ If A, B are WFF, then (A ∧ B) is WFF 
+ If A, B are WFF, then (A ∨ B) is WFF 
+ If A, B are WFF, then (A → B) is WFF 
+ Closure: Nothing else is WFF</p>
+<p class="document-paragraph">V. Properties of Recursive Deﬁnitions</p>
+<p class="document-paragraph">1. Well-Foundedness 
+ Every element must be reachable from base cases 
+ No inﬁnite descent possible 
+ Example: Cannot deﬁne natural numbers as "n is natural if n-1 is natural"</p>
+<p class="document-paragraph">2. Uniqueness 
+ Each element has a unique construction 
+ Important for inductive proofs 
+ May need parsing rules for expressions</p>
+<p class="document-paragraph">VI. Non-Recursive Classes Beyond Numbers</p>
+<p class="document-paragraph">1. Deﬁnition</p>
+<p class="document-paragraph">Classes that cannot be generated by ﬁnite recursive rules 
+ Often require inﬁnite information 
+ Example: Set of all true arithmetic statements</p>
+<p class="document-paragraph">2. Examples 
+ The set of all prime numbers 
+ The set of all halting Turing machine programs 
+ The set of all valid mathematical proofs</p>
+<p class="document-paragraph">VII. Applications and Techniques</p>
+<p class="document-paragraph">1. Mathematical Applications 
+ Formal language theory 
+ Computability theory 
+ Set theory 
+ Model theory</p>
+<p class="document-paragraph">2. Proof Techniques 
+ Structural induction 
+ Recursive function deﬁnitions 
+ Diagonal arguments 
+ Cardinality proofs</p>
+<p class="document-paragraph font-bold text-lg mb-4">Key Takeaways 
+1. Recursive deﬁnitions provide complete, countable systems 
+2. Some mathematical objects resist recursive deﬁnition 
+3. Non-recursivity often implies incompleteness 
+4. Cantor's diagonal argument proves fundamental limits 
+5. Understanding recursivity helps clarify mathematical foundations</p>
+<p class="document-paragraph">Next week will be our review session preparing for the ﬁnal exam.</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 7 
+ Recursivity and Non-Recursive Classes 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Number Systems and Recursivity (20 points)</p>
+<p class="document-paragraph">1. (10 points) Show that the following sets are recursively enumerable by: 
+ a) Providing the recursive deﬁnition 
+ b) Showing the ﬁrst 8 elements in your enumeration</p>
+<p class="document-paragraph">a) The positive rational numbers between 0 and 1</p>
+<p class="document-paragraph">b) The integers arranged by absolute value</p>
+<p class="document-paragraph">2. (10 points) Explain why each of these sets cannot be recursively enumerated. Be 
+speciﬁc.</p>
+<p class="document-paragraph">a) The set of all real numbers between 0 and 1</p>
+<p class="document-paragraph">b) The set of all inﬁnite sequences of 0s and 1s</p>
+<p class="document-paragraph">Part 2: Recursive Deﬁnitions (20 points)</p>
+<p class="document-paragraph">3. (10 points) Give a recursive deﬁnition for each of the following:</p>
+<p class="document-paragraph">a) The set of all binary strings containing an equal number of 0s and 1s</p>
+<p class="document-paragraph">b) The set of all well-formed parentheses strings</p>
+<p class="document-paragraph">4. (10 points) For each recursive deﬁnition, prove a property using structural induction:</p>
+<p class="document-paragraph">a) Prove that any string generated by your deﬁnition in 3a has equal 0s and 1s</p>
+<p class="document-paragraph">Part 3: Completeness and Incompleteness (10 points)</p>
+<p class="document-paragraph">5. (10 points) For each set, determine if it is recursively enumerable or not. Justify your 
+answer.</p>
+<p class="document-paragraph">a) The set of all ﬁnite subsets of natural numbers</p>
+<p class="document-paragraph">b) The set of all functions from ℕ to {0,1}</p>
+<p class="document-paragraph">Note: For full credit: 
+- Provide complete recursive deﬁnitions including base cases, recursive steps, and closure 
+- Show all steps in your proofs 
+- Give detailed explanations for non-recursivity 
+- Use proper mathematical notation</p>
+<p class="document-paragraph font-bold text-lg mb-4 bg-yellow-50 p-4 border-l-4 border-yellow-400">Symbolic Logic - Homework 7 
+ Recursivity and Non-Recursive Classes 
+Total Points: 50</p>
+<p class="document-paragraph">Part 1: Number Systems and Recursivity (20 points)</p>
+<p class="document-paragraph">1. (10 points) Show that the following sets are recursively enumerable by: 
+ a) Providing the recursive deﬁnition</p>
+<p class="document-paragraph">b) Showing the ﬁrst 8 elements in your enumeration</p>
+<p class="document-paragraph">a) The positive rational numbers between 0 and 1</p>
+<p class="document-paragraph">Answer: 
+Recursive Deﬁnition: 
+ Base: 1/2 is in the set 
+ Recursive step: For any p/q in lowest terms, add all fractions with: 
+ Numerator p' ≤ q' 
+ Denominator q' = q + 1 
+ That lie between 0 and 1</p>
+<p class="document-paragraph">First 8 elements (in order of increasing denominator): 
+1/2, 1/3, 2/3, 1/4, 3/4, 1/5, 2/5, 3/5</p>
+<p class="document-paragraph">b) The integers arranged by absolute value</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+Recursive Deﬁnition: 
+ Base: 0 is in the set 
+ Recursive step: If n is in the set, add both +(|n|+1) and -(|n|+1)</p>
+<p class="document-paragraph">First 8 elements: 
+0, +1, -1, +2, -2, +3, -3, +4</p>
+<p class="document-paragraph">2. (10 points) Explain why each of these sets cannot be recursively enumerated. Be 
+speciﬁc.</p>
+<p class="document-paragraph">a) The set of all real numbers between 0 and 1</p>
+<p class="document-paragraph">Answer: 
+Apply Cantor's diagonal argument: 
+1. Assume the set is enumerable: r₁, r₂, r₃, ... 
+2. Write each in decimal: r₁ = 0.a₁₁a₁₂a₁₃... 
+ r₂ = 0.a₂₁a₂₂a₂₃... 
+ r₃ = 0.a₃₁a₃₂a₃₃... 
+3. Construct d = 0.d₁d₂d₃... where dᵢ ≠ aᵢᵢ 
+4. d is between 0 and 1 but differs from every number in the list 
+5. Therefore, the list cannot be complete</p>
+<p class="document-paragraph">b) The set of all inﬁnite sequences of 0s and 1s</p>
+<p class="document-paragraph">Answer: 
+Similar diagonal argument:</p>
+<p class="document-paragraph">1. If enumerable, list sequences: s₁ = (a₁₁,a₁₂,...) 
+ s₂ = (a₂₁,a₂₂,...) 
+2. Create new sequence d where dᵢ = 1-aᵢᵢ 
+3. d differs from every sequence in list at position i 
+4. Therefore, not enumerable</p>
+<p class="document-paragraph">Part 2: Recursive Deﬁnitions (20 points)</p>
+<p class="document-paragraph">3. (10 points) Give a recursive deﬁnition for each of the following:</p>
+<p class="document-paragraph">a) The set of all binary strings containing an equal number of 0s and 1s</p>
+<p class="document-paragraph">Answer: 
+Base case: The empty string ε belongs to the set 
+Recursive steps: 
+1. If s is in the set, then 0s1 and 1s0 are in the set 
+2. If s and t are in the set, then st is in the set 
+Closure: No other strings are in the set</p>
+<p class="document-paragraph">b) The set of all well-formed parentheses strings</p>
+<p class="document-paragraph">Answer: 
+Base case: () is in the set 
+Recursive steps: 
+1. If s is in the set, then (s) is in the set 
+2. If s and t are in the set, then st is in the set 
+Closure: No other strings are in the set</p>
+<p class="document-paragraph">4. (10 points) For each recursive deﬁnition, prove a property using structural induction:</p>
+<p class="document-paragraph">a) Prove that any string generated by your deﬁnition in 3a has equal 0s and 1s</p>
+<p class="document-paragraph">Answer: 
+Base case: ε has 0 of each (equal) 
+Inductive steps: 
+1. If s has equal 0s and 1s: 
+ 0s1 adds one 0 and one 1 (still equal) 
+ 1s0 adds one 1 and one 0 (still equal) 
+2. If s and t have equal 0s and 1s: 
+ st combines their counts (sum of equals is equal)</p>
+<p class="document-paragraph">Part 3: Completeness and Incompleteness (10 points)</p>
+<p class="document-paragraph">5. (10 points) For each set, determine if it is recursively enumerable or not. Justify your 
+answer.</p>
+<p class="document-paragraph">a) The set of all ﬁnite subsets of natural numbers</p>
+<p class="document-paragraph">Answer: 
+Recursively enumerable. 
+1. Can enumerate by size: ﬁrst all subsets of size 0, then size 1, etc. 
+2. For each size n, list all combinations of n numbers in increasing order 
+3. This generates all ﬁnite subsets eventually</p>
+<p class="document-paragraph">b) The set of all functions from ℕ to {0,1}</p>
+<p class="document-paragraph">Answer: 
+Not recursively enumerable. 
+1. Each function corresponds to an inﬁnite sequence of 0s and 1s 
+2. By previous proof (2b), such sequences cannot be enumerated 
+3. Therefore, these functions cannot be enumerated 
+4. This set is equivalent to the power set of ℕ (uncountable)</p>
+<p class="document-paragraph">Symbolic Logic Course Review 
+ Week 8: Comprehensive Overview and Exam Preparation</p>
+<p class="document-paragraph font-bold text-lg mb-4">I. Basic Concepts and Notation (Week 1)</p>
+<p class="document-paragraph">1. Fundamental Concepts 
+ Statements and propositions 
+ Validity vs. soundness 
+ Material vs. strict implication</p>
+<p class="document-paragraph">2. Basic Symbols 
+ Negation (¬) 
+ Conjunction (∧) 
+ Disjunction (∨) 
+ Conditional (→) 
+ Biconditional (↔)</p>
+<p class="document-paragraph">3. Translation Skills 
+ Natural language to symbolic form 
+ Symbolic form to natural language 
+ Common patterns and pitfalls</p>
+<p class="document-paragraph font-bold text-lg mb-4">II. Truth Tables and Elementary Proofs (Week 2)</p>
+<p class="document-paragraph font-bold text-lg mb-4">1. Truth Tables 
+ Construction and evaluation 
+ Testing validity 
+ Checking equivalence</p>
+<p class="document-paragraph">2. Rules of Inference 
+ Modus Ponens 
+ Modus Tollens 
+ Disjunctive Syllogism 
+ Double Negation</p>
+<p class="document-paragraph font-bold text-lg mb-4">3. De Morgan's Laws 
+ ¬(p ∧ q) ≡ (¬p ∨ ¬q) 
+ ¬(p ∨ q) ≡ (¬p ∧ ¬q)</p>
+<p class="document-paragraph">III. Boolean Algebra (Week 3)</p>
+<p class="document-paragraph">1. Basic Operations 
+ NOT, AND, OR 
+ Truth tables 
+ Boolean functions</p>
+<p class="document-paragraph">2. Laws and Properties 
+ Identity 
+ Complement 
+ Associative 
+ Distributive 
+ De Morgan's 
+ Absorption</p>
+<p class="document-paragraph">3. Applications 
+ Circuit design 
+ Expression simpliﬁcation 
+ Truth function analysis</p>
+<p class="document-paragraph">IV. Introduction to Quantiﬁcation (Week 4)</p>
+<p class="document-paragraph">1. Basic Quantiﬁers 
+ Universal (∀) 
+ Existential (∃) 
+ Domains of discourse</p>
+<p class="document-paragraph">2. Translation Techniques 
+ Simple quantiﬁed statements</p>
+<p class="document-paragraph">Multiple quantiﬁers 
+ Order of quantiﬁers</p>
+<p class="document-paragraph">3. Negation Rules 
+ ¬∀x(Px) ≡ ∃x(¬Px) 
+ ¬∃x(Px) ≡ ∀x(¬Px)</p>
+<p class="document-paragraph">V. Advanced Quantiﬁcation (Week 5)</p>
+<p class="document-paragraph">1. Complex Translations 
+ Nested quantiﬁers 
+ Mixed quantiﬁers 
+ Mathematical statements</p>
+<p class="document-paragraph">2. Epsilon-Delta Deﬁnitions 
+ Limits 
+ Continuity 
+ Mathematical analysis</p>
+<p class="document-paragraph">3. Formal Proofs 
+ With quantiﬁers 
+ Mathematical rigor 
+ Common patterns</p>
+<p class="document-paragraph">VI. Models and Proofs (Week 6)</p>
+<p class="document-paragraph">1. Model Theory 
+ Structure of models 
+ Domains 
+ Interpretations</p>
+<p class="document-paragraph">2. Proving Invalidity 
+ Countermodels 
+ Construction techniques 
+ Veriﬁcation</p>
+<p class="document-paragraph">3. Consistency Proofs 
+ Model construction 
+ Veriﬁcation methods 
+ Common strategies</p>
+<p class="document-paragraph">VII. Recursivity (Week 7)</p>
+<p class="document-paragraph">1. Recursive Number Systems</p>
+<p class="document-paragraph">Natural numbers 
+ Integers 
+ Rationals 
+ Non-recursive reals</p>
+<p class="document-paragraph">2. Cantor's Proof 
+ Diagonal argument 
+ Uncountability 
+ Implications</p>
+<p class="document-paragraph">3. Recursive vs. Non-Recursive 
+ Completeness 
+ Incompleteness 
+ Applications</p>
+<p class="document-paragraph">Exam Preparation Strategies</p>
+<p class="document-paragraph">1. Key Skills to Practice 
+ Translation (both directions) 
+ Truth table construction 
+ Model building 
+ Proof techniques 
+ Recursive deﬁnitions</p>
+<p class="document-paragraph">2. Common Pitfalls 
+ Confusing material/strict implication 
+ Order of quantiﬁers 
+ Model completeness 
+ Recursive vs. non-recursive</p>
+<p class="document-paragraph">3. Problem-Solving Approach 
+ Read carefully 
+ Identify key concepts 
+ Plan solution strategy 
+ Show all work 
+ Verify answers</p>
+<p class="document-paragraph">Practice Problems Focus Areas</p>
+<p class="document-paragraph">1. Translation 
+ Complex statements 
+ Multiple quantiﬁers 
+ Mathematical concepts</p>
+<p class="document-paragraph">2. Proofs 
+ Validity/invalidity 
+ Consistency 
+ Model construction</p>
+<p class="document-paragraph">3. Recursivity 
+ Deﬁnitions 
+ Enumeration 
+ Non-recursive examples</p>
+<p class="document-paragraph font-bold text-lg mb-4">Final Exam Format 
+ Total points: 500 
+ Time: 180 minutes 
+ Sections: 
+ Translation and Basic Concepts 
+ Truth Tables and Boolean Algebra 
+ Quantiﬁcation and Models 
+ Recursivity and Deﬁnability 
+ Comprehensive Problem Solving</p>
+<p class="document-paragraph">Symbolic Logic - Final Examination 
+Total Points: 500 
+Time Allowed: 180 minutes</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part I: Translation and Basic Concepts (100 points)</p>
+<p class="document-paragraph">1. (40 points) Translate each statement into symbolic logic. State your predicates and 
+domain clearly.</p>
+<p class="document-paragraph">a) "Between any two real numbers there is a rational number and an irrational number."</p>
+<p class="document-paragraph">b) "Not every student who studies hard fails any exam."</p>
+<p class="document-paragraph">2. (30 points) Negate each statement, simplify, then translate back to English:</p>
+<p class="document-paragraph">a) ∀x∃y(P(x) → (Q(y) ∧ R(x,y)))</p>
+<p class="document-paragraph">3. (30 points) Explain the difference between material and strict implication using 
+examples. Provide truth conditions for each.</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part II: Truth Tables and Boolean Algebra (100 points)</p>
+<p class="document-paragraph">4. (40 points) Use truth tables to determine if these arguments are valid:</p>
+<p class="document-paragraph">a) p → q, q → r, ¬r ∴ ¬p</p>
+<p class="document-paragraph">5. (30 points) Simplify using Boolean algebra (show steps): 
+((x ∧ y) ∨ (¬x ∧ y)) ∧ (x ∨ ¬y)</p>
+<p class="document-paragraph">6. (30 points) Design a Boolean circuit for: 
+f(x,y,z) = (x ∧ ¬y) ∨ (¬x ∧ y ∧ z)</p>
+<p class="document-paragraph">Part III: Quantiﬁcation and Models (150 points)</p>
+<p class="document-paragraph">7. (50 points) Prove that these statements are not equivalent using a countermodel: 
+∀x∃y∀zR(x,y,z) and ∃y∀x∀zR(x,y,z)</p>
+<p class="document-paragraph">8. (50 points) Write the epsilon-delta proof that lim(x→2) x³ = 8</p>
+<p class="document-paragraph">9. (50 points) Construct a model that demonstrates the consistency of: 
+ ∀x∃yR(x,y) 
+ ∀x¬R(x,x) 
+ ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z))</p>
+<p class="document-paragraph">Part IV: Recursivity and Deﬁnability (150 points)</p>
+<p class="document-paragraph">10. (50 points) Prove that the set of real numbers is not recursively enumerable using 
+Cantor's diagonal argument.</p>
+<p class="document-paragraph">11. (50 points) Give a recursive deﬁnition for each:</p>
+<p class="document-paragraph">a) The set of all strings over {a,b} with equal numbers of a's and b's</p>
+<p class="document-paragraph">b) The arithmetic expressions using only numbers and +</p>
+<p class="document-paragraph">12. (50 points) Show that the following questions about an arbitrary recursive deﬁnition are 
+themselves non-recursive:</p>
+<p class="document-paragraph">a) Whether a given element belongs to the recursively deﬁned set 
+b) Whether a given property holds for all elements of the set</p>
+<p class="document-paragraph">Note: For full credit: 
+- Show all work clearly 
+- Justify each step in proofs 
+- State any assumptions or additional deﬁnitions used 
+- Verify all conditions in model constructions 
+- Provide clear explanations for conceptual questions</p>
+<p class="document-paragraph">Symbolic Logic - Final Examination 
+Total Points: 500 
+Time Allowed: 180 minutes</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part I: Translation and Basic Concepts (100 points)</p>
+<p class="document-paragraph">1. (40 points) Translate each statement into symbolic logic. State your predicates and 
+domain clearly.</p>
+<p class="document-paragraph">a) "Between any two real numbers there is a rational number and an irrational number."</p>
+<p class="document-paragraph">Answer: 
+Domain: Real numbers 
+Q(x): x is rational 
+I(x): x is irrational 
+∀x∀y(x < y → ∃z∃w((x < z < y) ∧ (x < w < y) ∧ Q(z) ∧ I(w)))</p>
+<p class="document-paragraph">b) "Not every student who studies hard fails any exam."</p>
+<p class="document-paragraph">Answer: 
+Domain: Students 
+S(x): x studies hard 
+F(x,y): x fails exam y 
+¬∀x(S(x) → ∀y(F(x,y))) 
+≡ ∃x(S(x) ∧ ∃y(¬F(x,y)))</p>
+<p class="document-paragraph">2. (30 points) Negate each statement, simplify, then translate back to English:</p>
+<p class="document-paragraph">a) ∀x∃y(P(x) → (Q(y) ∧ R(x,y)))</p>
+<p class="document-paragraph">Answer: 
+¬∀x∃y(P(x) → (Q(y) ∧ R(x,y))) 
+≡ ∃x∀y¬(P(x) → (Q(y) ∧ R(x,y))) 
+≡ ∃x∀y(P(x) ∧ ¬(Q(y) ∧ R(x,y))) 
+≡ ∃x∀y(P(x) ∧ (¬Q(y) ∨ ¬R(x,y)))</p>
+<p class="document-paragraph">English: "There exists something that has property P, and for all things, either they don't 
+have property Q or they don't stand in relation R to the ﬁrst thing."</p>
+<p class="document-paragraph">3. (30 points) Explain the difference between material and strict implication using 
+examples. Provide truth conditions for each.</p>
+<p class="document-paragraph">Answer: 
+Material implication (p → q):</p>
+<p class="document-paragraph">- Truth-functional: false only when p true and q false 
+- Example: "If it rains, the ground is wet" 
+- No necessary connection required 
+- Truth table shows all cases</p>
+<p class="document-paragraph">Strict implication (p ⊃ q): 
+- Based on logical necessity 
+- Example: "If x is a square, then x has four equal sides" 
+- Requires conceptual connection 
+- Cannot be captured by truth table alone 
+- Modal concept: true in all possible worlds</p>
+<p class="document-paragraph font-bold text-lg mb-4">Part II: Truth Tables and Boolean Algebra (100 points)</p>
+<p class="document-paragraph">4. (40 points) Use truth tables to determine if these arguments are valid:</p>
+<p class="document-paragraph">a) p → q, q → r, ¬r ∴ ¬p</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+| p | q | r | p → q | q → r | ¬r | ¬p | 
+|---|---|---|-------|-------|-----|-----| 
+| T | T | T | T | T | F | F | 
+| T | T | F | T | F | T | F | 
+| T | F | T | F | T | F | F | 
+| T | F | F | F | T | T | F | 
+| F | T | T | T | T | F | T | 
+| F | T | F | T | F | T | T | 
+| F | F | T | T | T | F | T | 
+| F | F | F | T | T | T | T |</p>
+<p class="document-paragraph">Valid: When premises are all true (row 2), conclusion is true.</p>
+<p class="document-paragraph">5. (30 points) Simplify using Boolean algebra (show steps): 
+((x ∧ y) ∨ (¬x ∧ y)) ∧ (x ∨ ¬y)</p>
+<p class="document-paragraph">Answer: 
+((x ∧ y) ∨ (¬x ∧ y)) ∧ (x ∨ ¬y) 
+≡ (y ∧ (x ∨ ¬x)) ∧ (x ∨ ¬y) [Distributive] 
+≡ (y ∧ 1) ∧ (x ∨ ¬y) [Complement] 
+≡ y ∧ (x ∨ ¬y) [Identity] 
+≡ (y ∧ x) ∨ (y ∧ ¬y) [Distributive] 
+≡ (y ∧ x) ∨ 0 [Complement] 
+≡ y ∧ x [Identity]</p>
+<p class="document-paragraph">6. (30 points) Design a Boolean circuit for: 
+f(x,y,z) = (x ∧ ¬y) ∨ (¬x ∧ y ∧ z)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+``` 
+ x ---|AND|---- 
+ | | 
+ y ---|NOT| |OR|---- Output 
+ | | 
+ x ---|NOT| | 
+ | | 
+ y ---|AND|----| 
+ | 
+ z ---| 
+```</p>
+<p class="document-paragraph">Part III: Quantiﬁcation and Models (150 points)</p>
+<p class="document-paragraph">7. (50 points) Prove that these statements are not equivalent using a countermodel: 
+∀x∃y∀zR(x,y,z) and ∃y∀x∀zR(x,y,z)</p>
+<p class="document-paragraph">Answer: 
+Countermodel: 
+Domain = {1, 2} 
+R = {(1,1,1), (1,1,2), (2,2,1), (2,2,2)}</p>
+<p class="document-paragraph">In this model: 
+- ∀x∃y∀zR(x,y,z) is true because: 
+ For x=1, y=1 works for all z 
+ For x=2, y=2 works for all z 
+- ∃y∀x∀zR(x,y,z) is false because: 
+ No single y works for all x and z</p>
+<p class="document-paragraph">8. (50 points) Write the epsilon-delta proof that lim(x→2) x³ = 8</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Answer: 
+To prove: ∀ε>0 ∃δ>0 ∀x(0<|x-2|<δ → |x³-8|<ε)</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">|x³-8| = |x³-2³| 
+ = |(x-2)(x²+2x+4)| 
+ = |x-2||x²+2x+4|</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">When |x-2| < 1, then 1 < x < 3 
+Then |x²+2x+4| ≤ 19</p>
+<p class="document-paragraph bg-gray-50 p-3 font-mono text-sm border rounded">Choose δ = min(1, ε/19) 
+Then |x³-8| = |x-2||x²+2x+4| < δ·19 ≤ ε</p>
+<p class="document-paragraph">9. (50 points) Construct a model that demonstrates the consistency of: 
+ ∀x∃yR(x,y) 
+ ∀x¬R(x,x) 
+ ∀x∀y∀z((R(x,y) ∧ R(y,z)) → R(x,z))</p>
+<p class="document-paragraph">Answer: 
+Model: 
+Domain: ℤ (integers) 
+R(x,y): x < y</p>
+<p class="document-paragraph">Veriﬁcation: 
+ ∀x∃yR(x,y): For any x, x+1 exists and x < x+1 
+ ∀x¬R(x,x): No number is less than itself 
+ Transitivity: If x < y and y < z then x < z</p>
+<p class="document-paragraph">Part IV: Recursivity and Deﬁnability (150 points)</p>
+<p class="document-paragraph">10. (50 points) Prove that the set of real numbers is not recursively enumerable using 
+Cantor's diagonal argument.</p>
+<p class="document-paragraph">Answer: 
+1. Assume reals are enumerable: r₁, r₂, r₃, ... 
+2. Write decimal expansions: 
+ r₁ = 0.a₁₁a₁₂a₁₃... 
+ r₂ = 0.a₂₁a₂₂a₂₃... 
+ r₃ = 0.a₃₁a₃₂a₃₃... 
+3. Construct d = 0.d₁d₂d₃... where: 
+ dᵢ = 1 if aᵢᵢ = 2 
+ dᵢ = 2 if aᵢᵢ ≠ 2 
+4. d is a real number but differs from every number in list 
+5. Therefore, list cannot be complete 
+6. Thus, reals are not recursively enumerable</p>
+<p class="document-paragraph">11. (50 points) Give a recursive deﬁnition for each:</p>
+<p class="document-paragraph">a) The set of all strings over {a,b} with equal numbers of a's and b's</p>
+<p class="document-paragraph">Answer: 
+Base: ε (empty string) is in the set 
+Recursive steps:</p>
+<p class="document-paragraph">1. If s is in the set, then asb and bsa are in the set 
+2. If s and t are in the set, then st is in the set 
+Closure: No other strings are in the set</p>
+<p class="document-paragraph">b) The arithmetic expressions using only numbers and +</p>
+<p class="document-paragraph">Answer: 
+Base: Any number is an expression 
+Recursive step: If E₁ and E₂ are expressions, then (E₁ + E₂) is an expression 
+Closure: Nothing else is an expression</p>
+<p class="document-paragraph">12. (50 points) Show that the following questions about an arbitrary recursive deﬁnition are 
+themselves non-recursive:</p>
+<p class="document-paragraph">a) Whether a given element belongs to the recursively deﬁned set 
+b) Whether a given property holds for all elements of the set</p>
+<p class="document-paragraph">Answer: 
+Use reduction to the halting problem: 
+a) Can encode Turing machine computations as elements 
+ Then membership would solve halting problem</p>
+<p class="document-paragraph">b) Can encode "machine M halts" as property 
+ Then property veriﬁcation would solve halting problem</p>
+<p class="document-paragraph">Both are therefore non-recursive by reduction</p>
+</div>
